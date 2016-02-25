@@ -1,0 +1,11 @@
+{
+  "name": "thinc-frontend",
+  "version": "1.0.0",
+  "description": "Repor for frontend course @ Thinc",
+  "main": "index.js",
+  "author": "HzJavier",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
