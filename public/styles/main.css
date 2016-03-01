@@ -1,24 +1,38 @@
-
-#main-div {
+.wrapper {
+  width: 1000px;
+  height: 600px;
 }
 
-.thinc-div {
-
-  width: 500px;
-
-  margin: 10px 20px 30px 40px;
-  margin: 20px 40px;
+.header {
+  background-color: #DDD;
+  width: 100%;
+  height: 300px;
+  transition: background-color 0.5s ease;
+  transition: height 2s ease;
 }
 
-.thinc-div > p {
-  font-size: 40px;
-  font-family: 'Helvetica'
+.header:hover {
+  background-color: red;
+  height: 10px;
 }
 
-.thinc-div > ul >li {
-  font-size: 10px;
+.detail-wrapper {
+  width: 100%;
+  height: 300px;
 }
 
-li {
-  font-size: 25px;
+.detail-wrapper > .detail {
+  width: calc(50% - 5px);
+  height: 300px;
+  display: inline-block;
+}
+
+.detail-wrapper > .left-detail {
+  background-color: rgb(215, 227, 234);
+  margin-right: 5px;
+}
+
+.detail-wrapper > .right-detail {
+  background-color: rgb(159, 198, 216);
+  margin-left: 5px;
 }
