@@ -1,0 +1,30 @@
+
+body{
+	background-color:#ddd;
+	color:#444;
+	text-align: center;
+}
+
+.square{
+	font-weight: bold;
+	font-size: 18px;
+	background-color: #aaa;
+	height:250px;
+	width:400px;
+	padding:20px;
+	margin:5px;
+	display: inline-block;
+	border-radius: 3px;
+	transition:background-color 2s ease;
+
+}
+
+.square:hover{
+	background-color: #444;
+	color:#ddd;
+}
+
+.big{
+	width:850px;
+}
+
