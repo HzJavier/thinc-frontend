@@ -43,10 +43,11 @@ function getProperty (input, property) {
 var person = {
 	username : "BARUC",
 	email : "sjdhj",
-	birth : "6/6/2006",
+	birth : "2006,6,6",
 	years : 12,
 	calculateAge: function (){
 		var birthday = new Date(this.birth);
+		console.log(birthday);
 		var today = new Date();
 		var years = today.getFullYear() - birthday.getFullYear();
 		birthday.setFullYear(today.getFullYear());
@@ -55,10 +56,10 @@ var person = {
 		    years--;
 		}
 		this.years = years;
-		console.log(years);
+		return years;
 	}
 }
 
-person.birth = "30/10/1993";
-person.calculateAge();
+person.birth = "10/30/1993";
+console.log(person.calculateAge());
 console.log(person.years);
