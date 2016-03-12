@@ -26,7 +26,7 @@ $(document).ready(function () {
    */
 
     // Handle button click event
-    $('#change-color-button').click(function () {
+    $('#change-color-button').on('click', function () {
       // Get color from textfield
       var newBgColor = $('#color-input').val();
       // Set new color on background
