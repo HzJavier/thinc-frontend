@@ -63,3 +63,12 @@ var person = {
 person.birth = "10/30/1993";
 console.log(person.calculateAge());
 console.log(person.years);
+
+var height = $('#main-wrapper').css('height');
+$('#main-wrapper').css('height', parseInt(height)*2);
+height = $('#main-wrapper').css('height');
+
+$('#color-button').click(function (){
+	var color = $('#textBox').val();
+	$('#main-wrapper').css('background-color', color);
+})
