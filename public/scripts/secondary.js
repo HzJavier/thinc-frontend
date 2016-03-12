@@ -13,4 +13,13 @@ $(document).ready(function () {
   mainWrapper.css('height', parseInt(currentHeight)/2);
   currentHeight = mainWrapper.css('height');
 
+  /**
+   * timeout & callbacks
+   */
+  function onTimeout () {
+    console.log('timeout');
+  }
+  console.log('before timeout');
+  setTimeout(onTimeout, 4000);
+  console.log('after timeout');
 });
