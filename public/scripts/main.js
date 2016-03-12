@@ -73,3 +73,30 @@ function fooFunction () {
 
     console.log(foo);
 }
+
+/**
+ * Prototypal inheritance
+ */
+function User() {
+  this.username = "hzjavier";
+  var email = "example@gmail.com";
+  var birthDate = new Date(2000, 09, 09);
+
+  this.getAge = function () {
+    var birthYear = birthDate.getYear();
+    var currentYear = new Date().getYear();
+    return currentYear - birthYear;
+  };
+}
+
+var moises = new User();
+
+moises.sayGoodbye = function () {
+  return "Bye";
+};
+
+User.prototype.sayHello = function () {
+  return "Hello!";
+};
+
+
