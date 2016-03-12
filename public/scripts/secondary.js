@@ -36,4 +36,19 @@ $(document).ready(function(){
 	});
 
 
+	/*AJAX*/
+	$.ajax({
+		url: 'Data/data.json',
+		dataType: 'json',
+		success: function(data){
+			console.log(data);
+			 var series = data.series;
+
+			 series.forEach(function (series){
+			 	mainWrapper.append('<div>' + series.name + '</div>');
+			 });
+		}
+	});
+
+
 });

@@ -1,0 +1,12 @@
+{
+	"series": [
+		{
+			"name": "Game of thrones",
+			"director": "Fulanito"
+		},
+		{
+			"name": "Friends",
+			"director": "Fulanito de tal"
+		}
+	]
+}
