@@ -1,13 +1,16 @@
 $(document).ready(function () {
-  $('#main-wrapper').html('Content for wrapper');
-  $('#main-wrapper').css('background-color', '#DDD');
+  var mainWrapper = $('#main-wrapper');
 
-  var bgColor = $('#main-wrapper').css('background-color');
+  mainWrapper.html('Content for wrapper');
+  mainWrapper.css('background-color', '#DDD');
+
+  var bgColor = mainWrapper.css('background-color');
 
   /**
    * Make div height to half
    */
-  var currentHeight = $('#main-wrapper').css('height');
-  $('#main-wrapper').css('height', parseInt(currentHeight)/2);
-   currentHeight = $('#main-wrapper').css('height');
+  var currentHeight = mainWrapper.css('height');
+  mainWrapper.css('height', parseInt(currentHeight)/2);
+  currentHeight = mainWrapper.css('height');
+
 });
