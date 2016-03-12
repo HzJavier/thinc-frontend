@@ -1,0 +1,14 @@
+{
+"Teacher":[
+	{
+		"name":"titanic",
+		"class":"introduction to programming",
+		"schedule":"mon-fri 12-15",
+	}
+	{
+		"name":"Awesome",
+		"class":"algorythms",
+		"schedule":"mon,tue 15-18",
+	}
+]
+}
