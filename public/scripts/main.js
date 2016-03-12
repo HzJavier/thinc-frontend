@@ -15,12 +15,17 @@ console.log(inputObj);
 
 
 var myObj={
-	methodOne=function(userDetails,dateOfBirth)
-userDetails{
-	username:"Mara"
-	email:"mara@empresa.com"
-	dateOfBirth:"01/01/2001"
-     calcAge: function()
+	// methodOne=function(userDetails,dateOfBirth)
+userDetails:{
+	// userName:"Mara";
+	email:"mara@empresa.com",
+	dateOfBirth:new Date (2001,01,01),
+     calcAge: function (){
+     	var birthYear= this.dateOfBirth.getYear();
+     	var currentYear= new date().getYear();
+     	return currentYear-birthYear;
+
+     }
 }
 }
 
@@ -37,3 +42,4 @@ userDetails{
 //   return~~ ((Date.now() - birthday) / (31557600000));
 // }
 // console.log(calcAge)
+
