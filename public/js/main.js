@@ -1,5 +1,3 @@
-
-
 function getProperty(inputObj, property){
   return inputObj[property];
 }
