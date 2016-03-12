@@ -105,5 +105,3 @@ moises.sayGoodbye = function () {
 User.prototype.sayHello = function () {
   return "Hello!";
 };
-
-
