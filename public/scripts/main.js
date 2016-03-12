@@ -77,10 +77,14 @@ function fooFunction () {
 /**
  * Prototypal inheritance
  */
-function User() {
-  this.username = "hzjavier";
-  var email = "example@gmail.com";
-  var birthDate = new Date(2000, 09, 09);
+function User(config) {
+  // if (config === undefined) {
+  //   config = {};
+  // }
+  config = config || {};
+
+  this.username = config.username || ''; 
+  var birthDate = config.birthDate || new Date();
 
   this.getAge = function () {
     var birthYear = birthDate.getYear();
@@ -90,6 +94,9 @@ function User() {
 }
 
 var moises = new User();
+var juan = new User({
+  username: 'juan_11'  
+});
 
 moises.sayGoodbye = function () {
   return "Bye";
