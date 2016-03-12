@@ -71,4 +71,19 @@ height = $('#main-wrapper').css('height');
 $('#color-button').click(function (){
 	var color = $('#textBox').val();
 	$('#main-wrapper').css('background-color', color);
-})
+});
+
+$.ajax({
+	url : 'data/data.json',
+	dataType: 'json',
+	success: function (data){
+		var players = data.players;
+
+		players.forEach(function (player){
+		$('#main-wrapper').append('<div>' + player.name + '</div>');	
+		});
+		console.log(data);
+	}
+});
+
+
