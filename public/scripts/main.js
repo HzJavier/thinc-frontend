@@ -43,3 +43,7 @@ userDetails:{
 // }
 // console.log(calcAge)
 
+var currentHeight=$('.detail-wrapper').css('height');
+$('.detail-wrapper').css('height',parseInt(currentHeight)/2);
+currentHeight=$('.detail-wrapper').css('height');
+
