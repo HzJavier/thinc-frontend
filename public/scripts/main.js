@@ -51,5 +51,25 @@ var myUser = {
   birthDate: new Date(1990, 09, 09),
   getAge: function () {
     // Calculate age here
+    var birthYear = this.birthDate.getYear();
+    // var currentDate = new Date();
+    // var currentYear = currentDate.getYear();
+    var currentYear = new Date().getYear();
+    return currentYear - birthYear;
   }
 };
+
+/**
+ * SCOPE & Hoisting
+ */
+function fooFunction () {
+  var bar = "bar";
+  var foo;
+
+  if (bar === "bar") {
+    foo = "foo";
+    console.log(foo);
+  }
+
+    console.log(foo);
+}
