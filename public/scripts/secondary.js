@@ -18,7 +18,7 @@ $(document).ready(function () {
     console.log('timeout');
   }
   console.log('before timeout');
-  setTimeout(onTimeout, 4000);
+  setTimeout(onTimeout.bind(this, 'hola'), 4000);
   console.log('after timeout');
 
   /**
@@ -33,4 +33,19 @@ $(document).ready(function () {
       mainWrapper.css('background-color', newBgColor); 
     });
 
+    /**
+     * AJAX
+     */
+    $.ajax({
+      url: 'data/data.json',
+      dataType: 'json',
+      success: function (data) {
+        // Do somethign with the data 
+        var books = data.books;
+        
+        books.forEach(function (book) {
+          mainWrapper.append('<div>' + book.name  + '</div>');
+        });
+      }
+    });
 });
