@@ -1,3 +1,4 @@
+
 var personObj = {
 	age: function(){
 		var date = new Date();
@@ -12,3 +13,4 @@ var personObj = {
 }
 
 console.log(personObj.age());
+
