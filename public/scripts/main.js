@@ -38,12 +38,17 @@ function getProperty (input, property) {
 
 
 /**
+ * The date object
+ */
+var myDate = new Date() ;
+
+/**
  * User
  */
 var myUser = {
   username: 'hzjavier',
   email: 'example@gmail.com',
-  birthDate: '90/09/09',
+  birthDate: new Date(1990, 09, 09),
   getAge: function () {
     // Calculate age here
   }
