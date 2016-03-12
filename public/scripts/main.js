@@ -3,10 +3,12 @@
  * Defining functions
  */
 function myFunc() {
+  var foo = "foo";
+  bar = "bar";
   console.log(arguments[2]);
 }
 
- myFunc("this is arg 1", "this is arg 2", "3", "4");
+myFunc();
 
  /**
   * Object literal notation
@@ -16,12 +18,33 @@ var myApp = {
     property1: "some property",
     property2: "ANOTHER property",
   },
-  someArray: [1, 2, 3]
+  someArray: [1, 2, 3],
+  sayHello: function () {
+    console.log('Hello!!');
+  }
 };
 
-console.log(myApp.myObj.property1);
-console.log(myApp.myObj["property2"]);
+// adding new properties
+myApp.newProperty = "This is a new property";
+
+// deleting properties
+delete myApp.someArray;
+
+myApp.sayHello()
 
 function getProperty (input, property) {
   return input[property];
 }
+
+
+/**
+ * User
+ */
+var myUser = {
+  username: 'hzjavier',
+  email: 'example@gmail.com',
+  birthDate: '90/09/09',
+  getAge: function () {
+    // Calculate age here
+  }
+};
