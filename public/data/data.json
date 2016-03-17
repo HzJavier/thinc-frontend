@@ -1,0 +1,16 @@
+{
+  "movies":
+    [
+      {
+        "id": 1,
+        "name": "Kung Fu Panda 3",
+        "genre": "Animation"
+      },
+      {
+        "id": 2,
+        "name": "Deadpool",
+        "genre": "Action"
+      }
+
+    ]
+}
