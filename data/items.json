@@ -1,14 +1,1 @@
-[
-  {
-    "id": "0",
-    "name": "The Martian"
-  },
-  {
-    "id": "2",
-    "name": "Javascript: The Good Parts"
-  },
-  {
-    "id": "3",
-    "name": "Clean Code"
-  }
-]
+[{"id":"0","name":"The Martian","author":"Andy Weir"},{"id":"2","name":"Javascript: The Good Parts","author":"Douglas Crockford"}]
