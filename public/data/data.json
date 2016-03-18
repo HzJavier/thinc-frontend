@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 { 
   "books": [ 
     { 
@@ -9,4 +10,19 @@
       "author": "Andy Weir" 
     } 
   ] 
+=======
+{
+"Teacher":[
+	{
+		"name":"titanic",
+		"class":"introduction to programming",
+		"schedule":"mon-fri 12-15",
+	}
+	{
+		"name":"Awesome",
+		"class":"algorythms",
+		"schedule":"mon,tue 15-18",
+	}
+]
+>>>>>>> 224448a610d4c5513e2213383731f8e99812e3bd
 }

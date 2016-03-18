@@ -34,6 +34,7 @@ myApp.sayHello()
 function getProperty (input, property) {
   return input[property];
 }
+<<<<<<< HEAD
 
 
 /**
@@ -104,3 +105,5 @@ moises.sayGoodbye = function () {
 User.prototype.sayHello = function () {
   return "Hello!";
 };
+=======
+>>>>>>> 224448a610d4c5513e2213383731f8e99812e3bd

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function () {
   var mainWrapper = $('#main-wrapper');
   mainWrapper.css('background-color', '#DDD');
@@ -49,3 +50,21 @@ $(document).ready(function () {
       }
     });
 });
+=======
+
+var personObj = {
+	age: function(){
+		var date = new Date();
+
+
+		return date.getFullYear() - this.dob.getFullYear();
+	},
+	username: "Lekx",
+	email: "link_mx@live.com",
+	dob: new Date(1989,09,03),
+
+}
+
+console.log(personObj.age());
+
+>>>>>>> 224448a610d4c5513e2213383731f8e99812e3bd
