@@ -4,7 +4,7 @@ var itemRoutes = require('./routes/items');
 
 app.use(express.static(__dirname + '/public'));
 
-app.use('/items', itemRoutes);
+app.use('/api/items', itemRoutes);
 
 var PORT = 8080;
 app.listen(PORT, function () {
