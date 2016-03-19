@@ -1,0 +1,6 @@
+Search Invoice: <input ng-model="bookQuery">
+<ul>
+  <li ng-repeat="invoice in invoices | filter:bookQuery">
+    ID: {{invoice.id}} - <b>{{invoice.name}}</b>
+  </li>
+</ul>
