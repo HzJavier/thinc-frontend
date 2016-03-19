@@ -1,14 +1,29 @@
 {
   "invoices" : [
     {
-      "id": 1,
-      "total": 50.0,
-      "client": "Azul Verde"
+      "id": "1",
+      "total": "50.0",
+      "client": "Francisco Lopez"
     },
     {
-      "id": 2,
-      "total": 50.0,
-      "client": "Azul Gris"
+      "id": "2",
+      "total": "60.0",
+      "client": "Raul Elizondo"
+    },
+    {
+      "id": "3",
+      "total": "70.0",
+      "client": "Raul Perez"
+    },
+    {
+      "id": "4",
+      "total": "80.0",
+      "client": "Raul Cabrera"
+    },
+    {
+      "id": "5",
+      "total": "90.0",
+      "client": "Raul Solosano"
     }
   ]
 }
