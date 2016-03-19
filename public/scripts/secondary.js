@@ -48,7 +48,20 @@ $(document).ready(function(){
 			 	mainWrapper.append('<div>' + series.name + '</div>');
 			 });
 		}
+		/*$.ajax({
+			url: 'data.items.json',
+			method: 'POST',
+			data: restaurant,
+			success: function(){
+
+			},
+			error: function(error){
+				console.log('error', error);
+			}
+		})*/
 	});
+
+
 
 
 });
