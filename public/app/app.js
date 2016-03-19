@@ -1,4 +1,20 @@
-var reviewApp = angular.module('reviewApp', []);
+var reviewApp = angular.module('reviewApp', [
+  'ngRoute'
+]);
+
+reviewApp.config(['$routeProvider',
+  function ($routeProvider) {
+    $routeProvider
+    .when('/books', {
+        templateUrl: 'app/books/listView.html',
+        controller: 'BookListCtrl'
+    })
+    .otherwise({
+      redirectTo: '/books'
+    });
+  }
+]);
+
 
 reviewApp.controller('BookListCtrl', ['$scope', '$http', function ($scope, $http) {
   
