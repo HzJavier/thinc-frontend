@@ -10,6 +10,10 @@ reviewApp.config(['$routeProvider',
         templateUrl: 'app/books/listView.html',
         controller: 'BookListCtrl'
     })
+    .when('/books/:id', {
+        templateUrl: 'app/books/detailView.html',
+        controller: 'BookDetailCtrl'
+    })
     .otherwise({
       redirectTo: '/books'
     });

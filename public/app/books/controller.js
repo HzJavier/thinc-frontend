@@ -10,3 +10,17 @@ bookControllers.controller('BookListCtrl', ['$scope', '$http', function ($scope,
   var bestBook = "The martian";
   $scope.weeklyRecommendation = "Mastering Refactoring";
 }]);
+
+bookControllers.controller('BookDetailCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+  var bookId = $routeParams.id;
+
+  $http.get('api/items')
+  .success(function (data) {
+    $scope.book = {};
+    var bookIndex = _.findIndex(data, { id: bookId });
+
+    if (bookIndex >= 0){
+      $scope.book = data[bookIndex];
+    }
+  });
+}]);
