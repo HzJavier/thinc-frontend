@@ -15,11 +15,8 @@ $(document).ready(function () {
    * timeout & callbacks
    */
   function onTimeout () {
-    console.log('timeout');
   }
-  console.log('before timeout');
   setTimeout(onTimeout.bind(this, 'hola'), 4000);
-  console.log('after timeout');
 
   /**
    * Update background color 
@@ -43,8 +40,14 @@ $(document).ready(function () {
         // Do somethign with the data 
         var books = data.books;
         
-        books.forEach(function (book) {
-          mainWrapper.append('<div>' + book.name  + '</div>');
+        books.forEach(function (book, index) {
+          var itemList = $('<div>' + book.name  + '</div>'); 
+          mainWrapper.append(itemList);
+
+
+            itemList.click(function () {
+              console.log('click on book', book);
+           });
         });
       }
     });
