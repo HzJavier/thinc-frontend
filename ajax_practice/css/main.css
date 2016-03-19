@@ -1,0 +1,65 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #ddd;
+	color:#222;
+	font-family: 'arial';
+	font-size: 14px;
+}
+
+
+header{
+	width:100%;
+	height:60px;
+	padding:10px;
+	background-color: #222;
+	border-bottom: 7px solid orangered;
+	color:orangered;
+	text-align: center;
+}
+
+main{
+	padding: 20px 50px;
+	width:100%;
+	height: calc(100vh - 50px);
+}
+#dudes-details{
+	width:60%;
+	margin: auto;
+	font-size:1.5em;
+}
+#dudes-wrapper{
+	width:60%;
+	margin: auto;
+}
+.dude{
+	width:170px;
+	height:100px;
+	border:2px solid #222;
+	padding:10px;
+	border-radius: 2px;
+	display: inline-block;
+	margin: 10px;
+	vertical-align: top;
+}
+
+.qualifications{
+	background-color: #222;
+	margin-left: -10px;
+	width:170px;
+	height:20px;
+	padding:10px;
+	margin-top:23px;
+	color:#ddd;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.fa{
+	margin:0 6px;
+	cursor: pointer;
+}
+
+.fa:hover{
+	color: yellow;
+}

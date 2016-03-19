@@ -1,0 +1,40 @@
+{ 
+  "Dudes": [ 
+    { 
+      "id": 1,
+      "name": "Joel Valdivia", 
+      "age": "23",
+      "color": "blue"
+    }, 
+    { 
+      "id": 2,
+      "name": "Baruc Espinoza", 
+      "age": "21",
+      "color": "yellow"
+    },    
+    { 
+      "id": 3,
+      "name": "Ismael Gonzalez", 
+      "age": "22",
+      "color": "cyan" 
+    },
+    { 
+      "id": 4,
+      "name": "Moises Vera", 
+      "age": "24",
+      "color": "magenta" 
+    },
+    { 
+      "id": 5,
+      "name": "Miriam Cantero", 
+      "age": "25",
+      "color": "orange" 
+    },
+    { 
+      "id": 6,
+      "name": "Juana la cubana", 
+      "age": "28",
+      "color": "red" 
+    } 
+  ] 
+} 

@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+{ 
+  "books": [ 
+    { 
+      "name": "Javascript: the good parts", 
+      "author": "douglas crockford" 
+    }, 
+    { 
+      "name": "The Martian", 
+      "author": "Andy Weir" 
+    } 
+  ] 
+=======
 {
 "Teacher":[
 	{
@@ -11,4 +24,5 @@
 		"schedule":"mon,tue 15-18",
 	}
 ]
+>>>>>>> 224448a610d4c5513e2213383731f8e99812e3bd
 }
