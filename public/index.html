@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="reviewApp">
+
 <head>
   <meta charset="UTF-8">
   <title></title>
 
   <link rel="stylesheet" href="./styles/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="components/jquery/dist/jquery.js"></script>
+  <script src="components/angular/angular.js"></script>
   <script src="./scripts/secondary.js"></script>
+  <script src="scripts/app.js"></script>
 </head>
-<body>
 
-  <!-- This is a comment -->
-  <div class="wrapper">
+<body ng-controller="MovieListCtrl">
+
+  <!-- <div class="wrapper">
     <div id="header">
       <h1 id="header-txt">The Marvel Rater </h1>
     </div>
@@ -21,6 +24,26 @@
      </div>
      <div id="detail-wrapper">
      </div>
+  </div> -->
+
+  <div class="main-wrapper">
+
+    Search movies: <input ng-model="movieQuery">
+
+    <ul>
+      <li ng-repeat="movie in movies | filter:movieQuery">
+        Id: {{ movie.id }} - <b> {{ movie.name }} </b>
+      </li>
+    </ul>
+
+    <input ng-model="weeklyRecommendation">
+    <br/>
+    {{ weeklyRecommendation }}
+
+    <br />
+
+    {{ bestMovie }}
+    {{ movies }}
   </div>
 
    <script src="./scripts/main.js"></script>

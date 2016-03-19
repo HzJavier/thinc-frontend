@@ -1,3 +1,8 @@
+/*body{
+  background: url("https://i.annihil.us/u/prod/aouquiz/images/background_desktop.jpg") center no-repeat;
+
+}*/
+
 #header-txt{
     color: #FFFFFF;
     font-size: 100px;
@@ -6,11 +11,6 @@
 #main-wrapper h1{
     color: #FFFFFF;
     font-size: 40px;
-}
-
-body{
-  background: url("https://i.annihil.us/u/prod/aouquiz/images/background_desktop.jpg") center no-repeat;
-
 }
 
 .wrapper{
@@ -70,12 +70,4 @@ body{
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-a:link {
-  color: #FFFFFF;
-}
-
-a:visited {
-  color: #FFFFFF;
 }

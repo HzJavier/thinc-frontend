@@ -1,0 +1,24 @@
+{
+  "name": "thinc-frontend",
+  "description": "Repor for frontend course @ Thinc",
+  "main": "index.js",
+  "authors": [
+    "HzJavier"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/HzJavier/thinc-frontend",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "angular": "^1.5.2"
+  }
+}

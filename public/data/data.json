@@ -2,7 +2,7 @@
   "movies":
     [
       {
-        "id": 1,
+        "id": 0,
         "name": "Guardians of the Galaxy",
         "director": "James Gunn",
         "year": "2014",
@@ -10,7 +10,7 @@
         "img_url": "http://1.media.dorkly.cvcdn.com/26/95/18b149286ca6f2920e017bd5d2ffcbf5.jpg"
       },
       {
-        "id": 2,
+        "id": 1,
         "name": "Deadpool",
         "director": "Tim Miller",
         "year": "2016"
