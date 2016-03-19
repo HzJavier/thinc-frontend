@@ -1,0 +1,22 @@
+{
+  "name": "thinc-frontend",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/HzJavier/thinc-frontend",
+  "authors": [
+    "HzJavier <javier.hernandez@wizeservices.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.2",
+    "angular": "~1.5.2"
+  }
+}

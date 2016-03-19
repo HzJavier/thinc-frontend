@@ -47,8 +47,24 @@ $(document).ready(function () {
 
             itemList.click(function () {
               console.log('click on book', book);
-           });
+
+              $.ajax({
+                url: 'data/data.json',
+                method: 'POST',
+                data: book,
+                success: function () {
+
+                }, 
+                error: function (error) {
+                  console.log('error', error);
+                }
+              });
+            });
         });
       }
     });
+
+
+    
+
 });

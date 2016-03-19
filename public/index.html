@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="reviewApp">
 <head>
   <meta charset="UTF-8">
   <title></title>
 
   <link rel="stylesheet" href="./styles/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
-   <script src="./scripts/secondary.js"></script>
+  <script src="components/jquery/dist/jquery.js"></script>  
+  <script src="components/angular/angular.js"></script>  
+  <script src="scripts/app.js"></script>
 </head>
-<body>
-
+<body ng-controller="BookListCtrl">
   <!-- This is a comment -->
 
    <div id="main-wrapper">
-     <input id="color-input" type="text">
-     <button id="change-color-button">Click me</button>
+     {{ books }} 
    </div>
-
-
-   <script src="./scripts/main.js"></script>
 </body>
 </html>
