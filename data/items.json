@@ -1,1 +1,6 @@
-[{"id":"0","name":"The Martian","author":"Andy Weir"},{"id":"2","name":"Javascript: The Good Parts","author":"Douglas Crockford"}]
+[
+  {"id":"0","name":"The Martian","author":"Andy Weir", "rating": 5},
+  {"id":"1","name":"Javascript: The Good Parts","author":"Douglas Crockford", "rating": 3},
+  {"id":"2","name":"Clean Code","author":"Andy Ray", "rating": 4},
+  {"id":"3","name":"Libro Amarillo","author":"Tom Ford", "rating": 2}
+  ]

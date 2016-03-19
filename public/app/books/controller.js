@@ -23,4 +23,12 @@ bookControllers.controller('BookDetailCtrl', ['$scope', '$http', '$routeParams',
       $scope.book = data[bookIndex];
     }
   });
+
+  $scope.showRating = function () {
+    console.log($scope.book.rating); 
+  };
+
+  $scope.updateRating = function (newRating) {
+    $scope.book.rating = newRating;
+  };
 }]);
