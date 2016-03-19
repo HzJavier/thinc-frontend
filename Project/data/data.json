@@ -1,0 +1,29 @@
+{
+	"players":[
+{
+	"name": "Javier Hernandez",
+	"position": "DC",
+	"team": "Bayern Leverkusen"
+},
+{
+	"name": "Javier Rodriguez",
+	"position": "DF",
+	"team": "Cruz Azul"
+},
+{
+	"name": "Hector Herrera",
+	"position": "MC",
+	"team": "Porto"
+},
+{
+	"name": "Omar Bravo",
+	"position": "DC",
+	"team": "Chivas"
+},
+{
+	"name": "Alfredo Talavera",
+	"position": "PO",
+	"team": "Toluca"
+}
+	]
+}
