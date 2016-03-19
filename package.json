@@ -8,5 +8,8 @@
   "dependencies": {
     "bower": "^1.7.7",
     "express": "^4.13.4"
+    "body-parser": "^1.15.0",
+    "lodash": "^4.6.1",
+    "q": "^1.4.1"
   }
 }
