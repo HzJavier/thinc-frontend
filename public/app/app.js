@@ -1,5 +1,6 @@
 var reviewApp = angular.module('reviewApp', [
-  'ngRoute'
+  'ngRoute',
+  'bookControllers'
 ]);
 
 reviewApp.config(['$routeProvider',
@@ -14,15 +15,3 @@ reviewApp.config(['$routeProvider',
     });
   }
 ]);
-
-
-reviewApp.controller('BookListCtrl', ['$scope', '$http', function ($scope, $http) {
-  
-  $http.get('api/items')
-  .success(function (data) {
-    $scope.books = data;
-  });
-
-  var bestBook = "The martian";
-  $scope.weeklyRecommendation = "Mastering Refactoring";
-}]);

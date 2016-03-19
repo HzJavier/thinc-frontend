@@ -1,4 +1,6 @@
-reviewApp.controller('BookListCtrl', ['$scope', '$http', function ($scope, $http) {
+var bookControllers = angular.module('bookControllers', []);
+
+bookControllers.controller('BookListCtrl', ['$scope', '$http', function ($scope, $http) {
   
   $http.get('api/items')
   .success(function (data) {
