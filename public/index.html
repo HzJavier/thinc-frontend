@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="reviewApp">
 <head>
   <meta charset="UTF-8">
   <title></title>
 
   <link rel="stylesheet" href="./styles/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  
+  <script src= "../bower_components/angular/angular.js"></script>
+  <script src="./scripts/app.js"></script>
 
 </head>
-<body>
+<body ng-controller="playerListCtrl">
 
   <!-- This is a comment -->
 
+
+
    <div id="main-wrapper">
-    <input type="text" id="textBox">
-    </input>
-    <button id="color-button">Click</button>
+    Search books : <input ng-model="bookQuery">
+
+    <ul>
+      <li ng-repeat="book in players | filter:bookQuery">
+        Id: {{book.id}} - <b>{{book.name}}</b>
+      </li>
+    </ul>
+    <input ng-model="weeklyRecomendation">
+    {{weeklyRecomendation}}
    </div>
 
-
-   <script src="./scripts/main.js"></script>
-   <script src= "./scripts/secondary.js"></script>
 </body>
 </html>
 
