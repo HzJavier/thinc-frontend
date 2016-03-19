@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
+<html lang="en" ng-app="dudesRatesApp">
+  <head>
+    <meta charset="UTF-8">
+    <title>Application</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="components/jquery/dist/jquery.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="scripts/app.js"></script>
+  </head>
+  <body ng-controller="dudesList">
 
-  <link rel="stylesheet" href="./styles/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    Dudes Search: <input ng-model="dudeQuery">
 
-</head>
-<body>
-  <div id="main-wrapper" class="square">
-  <input type="text" id="color-set"><br>
-    <button id="big-button">change color button</button>
-  </div>
+    <ul>
+      <ol ng-repeat="dude in dudes | filter:dudeQuery">
+        Id: {{ dude.id }} - <b> {{ dude.name }} </b>
+      </ol>
+    </ul>
 
-   <script src="./scripts/main.js"></script>
-   <script src="./scripts/secondary.js"></script>
-   <script src="./scripts/jquery.practice.js"></script>
-</body>
+    <input ng-model="drunks">
+    <br/>
+    {{ drunks }}
+
+  </body>
 </html>
