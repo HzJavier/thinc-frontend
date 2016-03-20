@@ -7,45 +7,22 @@
 
   <link rel="stylesheet" href="./styles/main.css">
   <script src="components/jquery/dist/jquery.js"></script>
+  <script src="components/lodash/dist/lodash.js"></script>
   <script src="components/angular/angular.js"></script>
-  <script src="./scripts/secondary.js"></script>
-  <script src="scripts/app.js"></script>
+  <script src="components/angular-route/angular-route.js"></script>
+
+  <script src="app/app.js"></script>
+  <script src="app/movies/controller.js"></script>
 </head>
 
-<body ng-controller="MovieListCtrl">
-
-  <!-- <div class="wrapper">
-    <div id="header">
-      <h1 id="header-txt">The Marvel Rater </h1>
-    </div>
-     <div id="main-wrapper">
-       <h1>Your #1 source for rating Marvel movies </h1>
-       <button id="button1">Rate now</button>
-     </div>
-     <div id="detail-wrapper">
-     </div>
-  </div> -->
+<body>
 
   <div class="main-wrapper">
-
-    Search movies: <input ng-model="movieQuery">
-
-    <ul>
-      <li ng-repeat="movie in movies | filter:movieQuery">
-        Id: {{ movie.id }} - <b> {{ movie.name }} </b>
-      </li>
-    </ul>
-
-    <input ng-model="weeklyRecommendation">
-    <br/>
-    {{ weeklyRecommendation }}
-
-    <br />
-
-    {{ bestMovie }}
-    {{ movies }}
+    <div class="header">
+      <h1 id="header-txt">The Marvel Rater </h1>
+    </div>
+    <div ng-view></div>
   </div>
 
-   <script src="./scripts/main.js"></script>
 </body>
 </html>

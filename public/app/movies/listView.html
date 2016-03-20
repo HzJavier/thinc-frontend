@@ -1,0 +1,8 @@
+<div class=list-wrapper>
+  Search movies: <input ng-model="movieQuery">
+   <ul>
+     <li ng-repeat="movie in movies | filter:movieQuery" ng-click="go(movie.id)">
+       Id: {{ movie.id }} - <b> {{ movie.name }} </b>
+     </li>
+   </ul>
+ </div>
