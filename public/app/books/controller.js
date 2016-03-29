@@ -30,5 +30,11 @@ bookControllers.controller('BookDetailCtrl', ['$scope', '$http', '$routeParams',
 
   $scope.updateRating = function (newRating) {
     $scope.book.rating = newRating;
+    
+    $http.put('api/items/' + $scope.book.id, $scope.book)
+    .success(function (data) {
+      console.log(data);
+    });
+
   };
 }]);
