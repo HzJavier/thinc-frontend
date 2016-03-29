@@ -1,4 +1,4 @@
-var movieControllers = angular.module('movieControllers',[]);
+var movieControllers = angular.module('movieControllers',['youtube-embed']);
 
 movieControllers.controller('MovieHomeCtrl',['$scope', '$http', '$location', function($scope, $http, $location){
 $scope.go = function ( path ) {
@@ -33,6 +33,7 @@ movieControllers.controller('MovieDetailCtrl', ['$scope', '$http', '$routeParams
     if ( movieIndex >= 0){
       $scope.movie = data[movieIndex];
     }
+    $scope.anotherGoodOne = $scope.movie.video_url;
   })
   .error(function(error){
     console.log('error',error);

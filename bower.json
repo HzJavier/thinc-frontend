@@ -21,6 +21,7 @@
     "jquery": "^2.2.2",
     "angular": "^1.5.2",
     "angular-route": "^1.5.2",
-    "lodash": "^4.6.1"
+    "lodash": "^4.6.1",
+    "angular-youtube-mb": "^1.1.1"
   }
 }

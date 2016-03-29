@@ -1,18 +1,21 @@
 <div class="movie-detail-wrapper">
-  <div class="body-detail" ng-style="{'background-image':'url({{movie.img_url}})'}"></div>
 
   <div class="header">
     <h1 id="header-page">The Super Movie Rater </h1>
   </div>
 
-  <b>{{movie.name}}</b>
-  <br/>
-
   <div class="movie-info">
+    <div id="movie-title"><b>{{movie.name}}</b><br/></div>
     {{movie.short_description}}<br/>
-    Director: {{movie.director}}<br/>
-    Year: {{movie.year}}<br/>
+    <i>Year:</i> {{movie.year}}<br/>
+    <i>Director:</i> {{movie.director}}<br/>
+    <i>Duration:</i> {{movie.duration}}<br/>
+    <i>Stars:</i> {{movie.stars}}<br/>
+    <div ng-click="showRating()">
+      <i>Rating:</i> {{movie.rating}}
+    </div>
   </div>
+
 
   <div class="rating-stars">
     <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=1}" ng-click="updateRating(1)"></span>
@@ -22,9 +25,7 @@
     <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=5}" ng-click="updateRating(5)"></span>
   </div>
 
-  <div ng-click="showRating()">
-    Rating: {{movie.rating}}
-  </div>
+  <youtube-video video-url="anotherGoodOne"></youtube-video>
 
   <button id="list-button" ng-click="go('/movies')">Back to list</button>
 </div>

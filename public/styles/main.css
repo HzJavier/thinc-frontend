@@ -7,6 +7,7 @@
 
 body{
   background-image: url("https://i.annihil.us/u/prod/aouquiz/images/background_desktop.jpg");
+  background-repeat: no-repeat;
 }
 
 .main-wrapper{
@@ -72,8 +73,13 @@ body{
 .movie-detail-wrapper{
   width: 500px;
   margin-left: 25px;
+  margin-bottom: 25px;
   color: #FFFFFF;
   font-size: 18px;
+}
+
+#movie-title{
+  font-size: 30px;
 }
 
 .rating-stars > .staticStarEmpty{
@@ -82,6 +88,7 @@ body{
   width: 20px;
   height: 20px;
   display: inline-block;
+  margin-bottom: 25px;
 }
 
 .rating-stars > .selected{
@@ -90,11 +97,12 @@ body{
   width: 20px;
   height: 20px;
   display: inline-block;
+  margin-bottom: 25px;
 }
 
 #list-button{
   margin-left: 111px;
-  margin-top: 128px;
+  margin-top: 50px;
   color: #FFFFFF;
   background-color: #081621;
   border: 5px solid #FFFFFF;
