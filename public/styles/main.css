@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'comicsFont';
+  src: url('BadaboomBB_Reg.ttf');
+  src: url('BadaboomBB_Reg.otf');
+
+}
+
 body{
   background-image: url("https://i.annihil.us/u/prod/aouquiz/images/background_desktop.jpg");
 }
@@ -8,41 +15,43 @@ body{
 }
 
 .header{
-  text-align: left;
-  width: 400px;
-  margin-left: 85px;
+  width: 600px;
   margin-top: 20px;
 }
 
-#header-txt{
-  color: #FFFFFF;
+#header-home{
+  font-family: "comicsFont";
+  font-weight: normal;
+  font-style: normal;
+  color: #8B0400;
   font-size: 100px;
+  margin-bottom: 0px;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+#header-slogan{
+  font-size: 25px;
 }
 
 .home-wrapper{
-  margin: auto;
-  text-align: center;
+  margin-left: 85px;
+  width: 600px;
 }
 
 .home-wrapper > h1{
   color: #FFFFFF;
-  font-size: 40px;
-  margin-toṕ: 30px;
+  font-size: 28px;
 }
 
 #rate-now-button{
+  margin-left: 111px;
+  margin-top: 128px;
   color: #FFFFFF;
-  background-color: #DA0E0E;
-  border: 3px solid #FFFFFF;
+  background-color: #081621;
+  border: 5px solid #FFFFFF;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
-}
-
-#rate-now-button:hover{
-  color: #DA0E0E;
-  background-color: #FFFFFF;
-  border: 3px solid #DA0E0E;
 }
 
 .list-wrapper{
@@ -51,7 +60,17 @@ body{
   font-size: 18px;
 }
 
+#header-page{
+  font-family: "comicsFont";
+  font-weight: normal;
+  font-style: normal;
+  color: #8B0400;
+  font-size: 50px;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
 .movie-detail-wrapper{
+  width: 500px;
   margin-left: 25px;
   color: #FFFFFF;
   font-size: 18px;
@@ -71,4 +90,15 @@ body{
   width: 20px;
   height: 20px;
   display: inline-block;
+}
+
+#list-button{
+  margin-left: 111px;
+  margin-top: 128px;
+  color: #FFFFFF;
+  background-color: #081621;
+  border: 5px solid #FFFFFF;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
 }

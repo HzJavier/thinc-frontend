@@ -1,1 +1,171 @@
-[{"id":"0","name":"Guardians of the Galaxy","director":"James Gunn","year":"2014","short_description":"A group of intergalactic criminals are forced to work together to stop a fanatical warrior from taking control of the universe.","img_url":"http://1.media.dorkly.cvcdn.com/26/95/18b149286ca6f2920e017bd5d2ffcbf5.jpg","rating":4},{"id":"1","name":"Deadpool","director":"Tim Miller","year":"2016","rating":2}]
+[
+    {
+        "id": "0",
+        "name": "Ant-Man",
+        "director": "Peyton Reed",
+        "year": "2015",
+        "duration": "117 mins",
+        "stars": "Paul Rudd, Michael Douglas, Corey Stoll, Evangeline Lilly",
+        "short_description": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that will save the world.",
+        "img_url": "http://www.hdwallpaper4u.com/wp-content/uploads/2015/06/ant_man_2015_hdwallpaper.jpg",
+        "rating": 4
+    },
+    {
+        "id": "1",
+        "name": "Avengers: Age of Ultron",
+        "director": "Joss Whedon",
+        "year": "2015",
+        "duration": "142 mins",
+        "stars": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+        "short_description": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's Mightiest Heroes to stop the villainous Ultron from enacting his terrible plans.",
+        "rating": 3
+    },
+    {
+        "id": "2",
+        "name": "Batman",
+        "director": "Tim Burton",
+        "year": "1989",
+        "duration": "126 mins",
+        "stars": "Michael Keaton, Jack Nicholson, Kim Basinger, Robert Wuhl",
+        "short_description": "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker.",
+        "rating": 4
+    },
+    {
+        "id": "3",
+        "name": "Batman Begins",
+        "director": "Christopher Nolan",
+        "year": "2005",
+        "duration": "140 mins",
+        "stars": "Christian Bale, Michael Caine, Ken Watanabe, Liam Neeson",
+        "short_description": "After training with his mentor, Batman begins his war on crime to free the crime-ridden Gotham City from corruption that the Scarecrow and the League of Shadows have cast upon it.",
+        "rating": 4
+    },
+    {
+        "id": "4",
+        "name": "Captain America: The First Avenger",
+        "director": "Joe Johnston",
+        "year": "2011",
+        "duration": "124 mins",
+        "stars": "Chris Evans, Hugo Weaving, Samuel L. Jackson, Hayley Atwell",
+        "short_description": "Steve Rogers, a rejected military soldier transforms into Captain America after taking a dose of a Super-Soldier serum. But being Captain America comes at a price as he attempts to take down a war monger and a terrorist organization.",
+        "rating": 3
+    },
+    {
+        "id": "5",
+        "name": "Captain America: The Winter Soldier",
+        "director": "Anthony Russo, Joe Russo",
+        "year": "2014",
+        "duration": "136 mins",
+        "stars": "Chris Evans, Samuel L. Jackson, Scarlett Johansson, Robert Redford",
+        "short_description": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and Shield agent, the Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
+        "rating": 3
+    },
+    {
+        "id": "6",
+        "name": "Daredevil",
+        "director": "Mark Steven Johnson",
+        "year": "2003",
+        "duration": "103 mins",
+        "stars": "Ben Affleck, Jennifer Garner, Colin Farrell, Michael Clarke Duncan",
+        "short_description": "A man blinded by toxic waste which also enhanced his remaining senses fights crime as an acrobatic martial arts superhero.",
+        "rating": 2
+    },
+    {
+        "id": "7",
+        "name": "Deadpool",
+        "director": "Tim Miller",
+        "year": "2016",
+        "duration": "108 mins",
+        "stars": "Ryan Reynolds, Morena Baccarin, T.J. Miller, Ed Skrein",
+        "short_description": "A former Special Forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.",
+        "rating": 5
+    },
+    {
+        "id": "8",
+        "name": "Guardians of the Galaxy",
+        "director": "James Gunn",
+        "year": "2014",
+        "duration": "121 mins",
+        "stars": "Chris Pratt, Vin Diesel, Bradley Cooper, Zoe Saldana",
+        "short_description": "A group of intergalactic criminals are forced to work together to stop a fanatical warrior from taking control of the universe.",
+        "img_bck": "http://1.media.dorkly.cvcdn.com/26/95/18b149286ca6f2920e017bd5d2ffcbf5.jpg",
+        "rating": 4
+    },
+    {
+        "id": "9",
+        "name": "Hulk",
+        "director": "Ang Lee",
+        "year": "2003",
+        "duration": "138 mins",
+        "stars": "Eric Bana, Jennifer Connelly, Sam Elliott, Josh Lucas",
+        "short_description": "Bruce Banner, a genetics researcher with a tragic past, suffers an accident that causes him to transform into a raging green monster when he gets angry.",
+        "img_bck": "",
+        "rating": 3
+    },
+    {
+        "id": "10",
+        "name": "Iron Man",
+        "director": "Jon Favreau",
+        "year": "2008",
+        "duration": "126 mins",
+        "stars": "Robert Downey Jr., Gwyneth Paltrow, Terrence Howard, Jeff Bridges",
+        "short_description": "After being held captive in an Afghan cave, an engineer creates a unique weaponized suit of armor to fight evil.",
+        "img_bck": "",
+        "rating": 4
+    },
+    {
+        "id": "11",
+        "name": "Kick-Ass",
+        "director": "Matthew Vaughn",
+        "year": "2010",
+        "duration": "117 mins",
+        "stars": "Aaron Taylor-Johnson, Nicolas Cage, Chloë Grace Moretz, Garrett M. Brown",
+        "short_description": "Dave Lizewski is an unnoticed high school student and comic book fan who one day decides to become a super-hero, even though he has no powers, training or meaningful reason to do so.",
+        "img_bck": "",
+        "rating": 3
+    },
+    {
+        "id": "12",
+        "name": "Man of Steel",
+        "director": "Zack Snyder",
+        "year": "2013",
+        "duration": "143 mins",
+        "stars": "Henry Cavill, Amy Adams, Michael Shannon, Diane Lane",
+        "short_description": "Clark Kent, one of the last of an extinguished race disguised as an unremarkable human, is forced to reveal his identity when Earth is invaded by an army of survivors who threaten to bring the planet to the brink of destruction.",
+        "img_bck": "",
+        "rating": 4
+    },
+    {
+        "id": "13",
+        "name": "Spider-Man",
+        "director": "Sam Raimi",
+        "year": "2002",
+        "duration": "121 mins",
+        "stars": "Tobey Maguire, Kirsten Dunst, Willem Dafoe, James Franco",
+        "short_description": "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+        "img_bck": "",
+        "rating": 3
+    },
+    {
+        "id": "14",
+        "name": "Teenage Mutant Ninja Turtles",
+        "director": "Jonathan Liebesman",
+        "year": "2014",
+        "duration": "101 mins",
+        "stars": "Megan Fox, Will Arnett, William Fichtner, Noel Fisher",
+        "short_description": "When a kingpin threatens New York City, a group of mutated turtle warriors must emerge from the shadows to protect their home.",
+        "img_bck": "",
+        "rating": 3
+    },
+    {
+        "id": "15",
+        "name": "The Avengers",
+        "director": "Joss Whedon",
+        "year": "2012",
+        "duration": "143 mins",
+        "stars": "Robert Downey Jr., Chris Evans, Scarlett Johansson, Jeremy Renner",
+        "short_description": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
+        "img_bck": "",
+        "rating": 5
+    }
+]

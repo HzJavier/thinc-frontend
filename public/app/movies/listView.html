@@ -1,4 +1,7 @@
 <div class=list-wrapper>
+  <div class="header">
+    <h1 id="header-page">The Super Movie Rater </h1>
+  </div>
   Search movies: <input ng-model="movieQuery">
    <ul>
      <li ng-repeat="movie in movies | filter:movieQuery" ng-click="go(movie.id)">

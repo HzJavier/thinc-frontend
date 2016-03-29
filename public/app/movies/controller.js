@@ -1,15 +1,13 @@
 var movieControllers = angular.module('movieControllers',[]);
 
 movieControllers.controller('MovieHomeCtrl',['$scope', '$http', '$location', function($scope, $http, $location){
-  $scope.go = function ( path ) {
+$scope.go = function ( path ) {
     $location.path( path );
   };
 
 }]);
 
 movieControllers.controller('MovieListCtrl',['$scope', '$http', '$location', function($scope, $http, $location){
-  $('#header-txt').css('font-size','50px');
-
   $http.get('api/items')
   .success(function(data) {
     $scope.movies = data;
@@ -24,9 +22,7 @@ movieControllers.controller('MovieListCtrl',['$scope', '$http', '$location', fun
 
 }]);
 
-movieControllers.controller('MovieDetailCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
-  $('#header-txt').css('font-size','50px');
-
+movieControllers.controller('MovieDetailCtrl', ['$scope', '$http', '$routeParams', '$location', function($scope, $http, $routeParams, $location){
   var movieId = $routeParams.id;
 
   $http.get('api/items')
@@ -54,4 +50,9 @@ movieControllers.controller('MovieDetailCtrl', ['$scope', '$http', '$routeParams
       console.log(data);
     });
   };
+
+  $scope.go = function ( path ) {
+      $location.path( path );
+    };
+
 }]);
