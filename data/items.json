@@ -1,1 +1,6 @@
-[{"id":"0","name":"The Martian","author":"Andy Weir"},{"id":"2","name":"Javascript: The Good Parts","author":"Douglas Crockford"}]
+[
+  {"id":"0","name":"Minerva", "crafter" : "Minerva", "author":"Andy Weir","rating":5},
+  {"id":"1","name":"Señor Matanza", "crafter" : "Cerveza Fauna", "author":"Douglas Crockford","rating":3},
+  {"id":"2","name":"Propaganda", "crafter" : "Propaganda Brewing", "author":"Andy Ray","rating":4},
+  {"id":"3","name":"Kermeliten","crafter" : "Karmeliten Mexico", "author":"Tom Ford","rating":2}
+]

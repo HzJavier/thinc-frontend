@@ -1,38 +1,23 @@
 <!DOCTYPE html>
-<!-- declare all the applications is based on AngularJS -->
 <html lang="en" ng-app="reviewApp">
 <head>
   <meta charset="UTF-8">
   <title></title>
-  <link rel="stylesheet" href="styles/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="components/jquery/dist/jquery.js"></script>
+  <script src="components/lodash/dist/lodash.js"></script>
   <script src="components/angular/angular.js"></script>
   <script src="components/angular-route/angular-route.js"></script>
-  <script src="components/lodash/lodash.js"></script>
+  <script src="components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="app/app.js"></script>
   <script src="app/books/controller.js"></script>
 </head>
-<body class="body">
-  <div class="slide" id="main-wrapper">
-    <div ng-view></div>
-    <!--<input type="text" ng-model="highPriceInvoice">
-    {{ highPriceInvoice }}-->
-  </div>
-  <div class="lineal-box">
-    <div class="card" id="first-child">
-      <h4>Invoices</h4>
-      <!--<input type="text" name="color" id="input-color">
-      <button id="color-button">Click me</button>-->
-    </div>
-    <div class="card" id="second-child">
-      <h4>Description</h4>
-      <div id="description-container">
-      </div>
-    </div>
-  </div>
-
+<body>
+   <div class="container">
+      <div class="row" ng-view></div>
+   </div>
 </body>
-
-<script src="./js/main.js"></script>
-<script src="./js/jquery_scripting.js"></script>
 </html>

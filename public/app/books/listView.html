@@ -1,6 +1,42 @@
-Search Invoice: <input ng-model="bookQuery">
-<ul>
-  <li ng-repeat="invoice in invoices | filter:bookQuery">
-    ID: {{invoice.id}} - <b>{{invoice.name}}</b>
-  </li>
-</ul>
+<div class="row">
+  <div class="col-md-12">
+      <h1 class="page-title">Microbrew</h4>
+      <p class="text-muted page-title-alt">Qualify the best craft beers from your region</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="pull-right">
+      Search beers: <input ng-model="bookQuery">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <table class="table forum table-striped">
+    <thead>
+      <tr>
+        <th class="cell-stat"></th>
+        <th>
+          <h3>Beer Name</h3>
+        </th>
+        <th class="cell-stat text-center hidden-xs hidden-sm">Stars</th>
+        <th class="cell-stat text-center hidden-xs hidden-sm">Crafter</th>
+        <th class="cell-stat text-center hidden-xs hidden-sm">Author</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="book in books | filter:bookQuery">
+        <td class="text-center"><i class="fa fa-beer fa-2x text-primary"></i></td>
+        <td>
+          <h4><a href="#">{{ book.name }}</a><br><small>Some description</small></h4>
+        </td>
+        <td class="text-center hidden-xs hidden-sm"><a href="#">{{ book.rating }}</a></td>
+        <td class="text-center hidden-xs hidden-sm"><a href="#">{{book.crafter}}</a></td>
+        <td class="text-center hidden-xs hidden-sm">by <a href="#">{{ book.author }}</a><br></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>
