@@ -1,0 +1,16 @@
+
+<div class="dude-detail-wrapper" ng-class="{ 'hide': dude.id === undefined }">
+	<div class="dude-detail">
+		{{ dude.name }} dude details:<br><br>
+		he is  {{ dude.age }} years old and has {{ dude.id }} as id number, he also likes  {{ dude.color }} beers. his beer rate is: {{ dude.rate }}
+	</div>
+	<div class="rate-wrapper">
+		<!--<img class ="rate-beer" src="https://cdn4.iconfinder.com/data/icons/mobile-app-icons/512/beermug.png" ng-repeat="i in [1,2,3,4,5]" > -->
+	<img class ="rate-beer" src="https://cdn4.iconfinder.com/data/icons/mobile-app-icons/512/beermug.png" ng-class="{ 'selected': dude.rate > 0 }" ng-click="updateRate()">
+	<img class ="rate-beer" src="https://cdn4.iconfinder.com/data/icons/mobile-app-icons/512/beermug.png" ng-class="{ 'selected': dude.rate > 1 }" ng-click="updateRate()">
+	<img class ="rate-beer" src="https://cdn4.iconfinder.com/data/icons/mobile-app-icons/512/beermug.png" ng-class="{ 'selected': dude.rate > 2 }" ng-click="updateRate()">
+	<img class ="rate-beer" src="https://cdn4.iconfinder.com/data/icons/mobile-app-icons/512/beermug.png" ng-class="{ 'selected': dude.rate > 3 }" ng-click="updateRate()">	
+	<img class ="rate-beer" src="https://cdn4.iconfinder.com/data/icons/mobile-app-icons/512/beermug.png" ng-class="{ 'selected': dude.rate > 4 }" ng-click="updateRate()">
+	<img class ="rate-beer" src="https://cdn4.iconfinder.com/data/icons/mobile-app-icons/512/beermug.png" ng-class="{ 'selected': dude.rate > 5 }" ng-click="updateRate()">
+	</div>
+</div>

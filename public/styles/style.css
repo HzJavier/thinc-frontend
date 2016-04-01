@@ -28,3 +28,42 @@ body{
 	width:850px;
 }
 
+.dude-detail-wrapper{
+	font-size: 1.5em;
+	margin:50px auto;
+	width:600px;
+	height:200px;
+	padding:20px;
+	border:1px solid #222;
+}
+.rate-wrapper{
+	width:500px;
+	margin:auto;
+	margin:20px;
+}
+
+.rate-beer{
+	margin:5px;
+	display: inline-block;
+	width:30px;
+	height: auto;
+	padding:5px;
+}
+.rate-beer:hover{
+	background-color: yellow;
+	cursor: pointer;
+	border-radius: 20px;
+
+}
+.selected{
+	background-color: yellow;
+	cursor: pointer;
+	border-radius: 20px;
+
+}
+
+.hide{
+	display: none;
+}
+
+
