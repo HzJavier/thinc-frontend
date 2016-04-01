@@ -1,31 +1,35 @@
-<div class="movie-detail-wrapper">
+<div class="detail-body" ng-style="{'background-image': 'url(' + movie.img_bck + ')'}">
+  <div class="movie-detail-wrapper">
 
-  <div class="header">
-    <h1 id="header-page">The Super Movie Rater </h1>
-  </div>
-
-  <div class="movie-info">
-    <div id="movie-title"><b>{{movie.name}}</b><br/></div>
-    {{movie.short_description}}<br/>
-    <i>Year:</i> {{movie.year}}<br/>
-    <i>Director:</i> {{movie.director}}<br/>
-    <i>Duration:</i> {{movie.duration}}<br/>
-    <i>Stars:</i> {{movie.stars}}<br/>
-    <div ng-click="showRating()">
-      <i>Rating:</i> {{movie.rating}}
+    <div class="header">
+      <div id="header-page">The Super Movie Rater </h1>
     </div>
+
+    <div class="movie-info">
+      <div id="movie-title"><b>{{movie.name}}</b><br/></div>
+      {{movie.short_description}}<br/>
+      <i>Year:</i> {{movie.year}}<br/>
+      <i>Director:</i> {{movie.director}}<br/>
+      <i>Duration:</i> {{movie.duration}}<br/>
+      <i>Stars:</i> {{movie.stars}}<br/>
+      <div ng-click="showRating()">
+        <i>Rating:</i> {{movie.rating}}
+      </div>
+    </div>
+
+
+    <div class="rating-stars">
+      <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=1}" ng-click="updateRating(1)"></span>
+      <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=2}" ng-click="updateRating(2)"></span>
+      <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=3}" ng-click="updateRating(3)"></span>
+      <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=4}" ng-click="updateRating(4)"></span>
+      <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=5}" ng-click="updateRating(5)"></span>
+    </div>
+
+    <youtube-video video-url="anotherGoodOne"></youtube-video>
+
+    <button id="list-button" ng-click="go('/movies')">Back to list</button>
   </div>
 
 
-  <div class="rating-stars">
-    <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=1}" ng-click="updateRating(1)"></span>
-    <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=2}" ng-click="updateRating(2)"></span>
-    <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=3}" ng-click="updateRating(3)"></span>
-    <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=4}" ng-click="updateRating(4)"></span>
-    <span class="staticStarEmpty" ng-class="{'selected': movie.rating >=5}" ng-click="updateRating(5)"></span>
-  </div>
-
-  <youtube-video video-url="anotherGoodOne"></youtube-video>
-
-  <button id="list-button" ng-click="go('/movies')">Back to list</button>
 </div>

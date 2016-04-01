@@ -1,6 +1,14 @@
-var movieControllers = angular.module('movieControllers',['youtube-embed']);
+var movieControllers = angular.module('movieControllers',['youtube-embed', 'ngAnimate']);
 
-movieControllers.controller('MovieHomeCtrl',['$scope', '$http', '$location', function($scope, $http, $location){
+movieControllers.controller('MovieLoginCtrl',['$scope', '$http', '$location', function($scope, $http, $location){
+
+$scope.go = function ( path ) {
+    $location.path( path );
+  };
+
+}]);
+
+movieControllers.controller('MovieSignupCtrl',['$scope', '$http', '$location', function($scope, $http, $location){
 $scope.go = function ( path ) {
     $location.path( path );
   };

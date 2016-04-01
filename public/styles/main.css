@@ -2,16 +2,16 @@
   font-family: 'comicsFont';
   src: url('BadaboomBB_Reg.ttf');
   src: url('BadaboomBB_Reg.otf');
-
 }
 
-body{
-  background-image: url("https://i.annihil.us/u/prod/aouquiz/images/background_desktop.jpg");
-  background-repeat: no-repeat;
+html, body, .ng-scope {
+  margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .main-wrapper{
-  width: 1270px;
+  width: 1280px;
   height: 840px;
 }
 
@@ -22,8 +22,8 @@ body{
 
 #header-home{
   font-family: "comicsFont";
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  font-style: 400;
   color: #8B0400;
   font-size: 100px;
   margin-bottom: 0px;
@@ -32,6 +32,22 @@ body{
 
 #header-slogan{
   font-size: 25px;
+  font-family: "comicsFont";
+  font-weight: 100;
+  color: #FFFFFF;
+}
+
+.home-body{
+  height: 840px;
+  width: 1280px;
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  background-image: url("https://i.annihil.us/u/prod/aouquiz/images/background_desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover !important;
 }
 
 .home-wrapper{
@@ -46,7 +62,7 @@ body{
 
 #rate-now-button{
   margin-left: 111px;
-  margin-top: 128px;
+  margin-top: 40px;
   color: #FFFFFF;
   background-color: #081621;
   border: 5px solid #FFFFFF;
@@ -55,10 +71,49 @@ body{
   text-transform: uppercase;
 }
 
+.signup-body{
+  height: 840px;
+  width: 1280px;
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  background-image: url("https://i.annihil.us/u/prod/aouquiz/images/background_desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+.signup-wrapper{
+  margin-left: 25px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: 'Titillium Web', sans-serif;
+  width: 600px;
+}
+
+.signup-header{
+  margin-top: 20px;
+}
+
+.list-body{
+  height: 840px;
+  width: 1280px;
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  background-image: url("https://i.annihil.us/u/prod/aouquiz/images/background_desktop.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
 .list-wrapper{
   margin-left: 25px;
   color: #FFFFFF;
   font-size: 18px;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 #header-page{
@@ -68,18 +123,40 @@ body{
   color: #8B0400;
   font-size: 50px;
   text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  margin-bottom: 20px;
+}
+
+.detail-body{
+  height: 840px;
+  width: 1280px;
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  background-image: url("https://i.annihil.us/u/prod/aouquiz/images/background_desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover !important;
 }
 
 .movie-detail-wrapper{
   width: 500px;
   margin-left: 25px;
-  margin-bottom: 25px;
   color: #FFFFFF;
   font-size: 18px;
+
+}
+
+.movie-info{
+  font-family: 'Titillium Web', sans-serif;
 }
 
 #movie-title{
   font-size: 30px;
+}
+
+.rating-stars{
+  display: inline-block;
 }
 
 .rating-stars > .staticStarEmpty{
@@ -101,12 +178,140 @@ body{
 }
 
 #list-button{
-  margin-left: 111px;
-  margin-top: 50px;
   color: #FFFFFF;
-  background-color: #081621;
-  border: 5px solid #FFFFFF;
+  background-color: Transparent;
+  border: 3px solid #FFFFFF;
   font-weight: bold;
-  font-size: 30px;
-  text-transform: uppercase;
+  font-size: 20px;
+  display: inline-block;
+  cursor:pointer;
+  position: relative;
+  left: 1000px;
+  bottom: 50px;
 }
+
+li.ng-enter,
+li.ng-leave
+{
+  -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  position: relative;
+  display: block;
+}
+
+li.ng-enter.ng-enter-active ,
+li.ng-leave {
+  opacity: 1;
+  top: 0;
+  height: 22px;
+}
+
+li.ng-leave.ng-leave-active ,
+li.ng-enter {
+  opacity: 0;
+  top: -50px;
+  height: 0px;
+}
+
+/*Form format*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.tab-content {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.form {
+  max-width:600px;
+  margin-top:40px;
+  border-radius:4;
+}
+
+#welcome{
+  margin-left: 125px;
+  color:#ffffff;
+  font-weight:300;
+}
+
+#signup{
+  margin-left: 20px;
+  color:#ffffff;
+  font-weight:300;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:70%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid #a0b3b0;
+  color:#ffffff;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &:focus {
+		outline:0;
+		border-color:#1ab188;
+  }
+}
+
+textarea {
+  border:2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+  color:#ffffff;
+}
+
+
+.button-block {
+  background:#1ab188;
+  color:#ffffff;
+  width:70%;
+  border:0;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  display:block;
+}
+
+.signup{
+  margin-top:-20px;
+  margin-left: 110px;
+  text-align:right;
+}
+
+.login{
+  margin-top:-20px;
+  text-align:right;
+}
+
+a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    color:#1ab188;
+    font-size:20px;
+    font-weight:600;
+    float:left;
+    width:100%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    &:hover {
+      background:#1ab188;
+      color:#ffffff;
+  }

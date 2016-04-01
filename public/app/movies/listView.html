@@ -1,11 +1,13 @@
-<div class=list-wrapper>
-  <div class="header">
-    <h1 id="header-page">The Super Movie Rater </h1>
-  </div>
-  Search movies: <input ng-model="movieQuery">
-   <ul>
-     <li ng-repeat="movie in movies | filter:movieQuery" ng-click="go(movie.id)">
-       Id: {{ movie.id }} - <b> {{ movie.name }} </b>
-     </li>
-   </ul>
- </div>
+<div class=list-body>
+  <div class=list-wrapper>
+    <div class="header">
+      <div id="header-page">The Super Movie Rater </h1>
+    </div>
+    Search movies: <input ng-model="movieQuery">
+     <ul>
+       <li ng-repeat="movie in movies | filter:movieQuery" ng-click="go(movie.id)" class="slide">
+         Id: {{ movie.id }} - <b> {{ movie.name }} </b>
+       </li>
+     </ul>
+   </div>
+</div>

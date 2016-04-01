@@ -6,9 +6,17 @@ var reviewApp = angular.module('reviewApp',[
 reviewApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
-    .when('/',{
-      templateUrl: 'app/movies/homeView.html',
-      controller: 'MovieHomeCtrl'
+    .when('/login',{
+      templateUrl: 'app/movies/loginView.html',
+      controller: 'MovieLoginCtrl'
+    })
+    .when('/signup', {
+        templateUrl: 'app/movies/signUpView.html',
+        controller: 'MovieSignupCtrl'
+    })
+    .when('/profile/:id', {
+        templateUlr: 'app/user/profileView.html',
+        controller: 'ProfileCtrl'
     })
     .when('/movies', {
       templateUrl: 'app/movies/listView.html',

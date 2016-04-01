@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="reviewApp">
-
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Super Hero Movie Rater</title>
 
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Titillium+Web">
   <script src="components/jquery/dist/jquery.js"></script>
   <script src="components/lodash/dist/lodash.js"></script>
   <script src="components/angular/angular.js"></script>
   <script src="components/angular-route/angular-route.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="components/angular-youtube-mb/src/angular-youtube-embed.js"></script>
+  <script src="components/angular-animate/angular-animate.js"></script>
 
   <script src="app/app.js"></script>
   <script src="app/movies/controller.js"></script>
 </head>
-
 <body>
-
   <div class="main-wrapper">
-    <div ng-view></div>
+    <div ng-view class="view-animate"></div>
   </div>
-
 </body>
 </html>
