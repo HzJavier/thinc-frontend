@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-md-12">
     <div class="pull-right">
-      Search beers: <input ng-model="bookQuery">
+      Search beers: <input ng-model="beerQuery">
     </div>
   </div>
 </div>
@@ -21,14 +21,14 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="book in books | filter:bookQuery">
+      <tr ng-repeat="beer in beers | filter:beerQuery">
         <td class="text-center"><i class="fa fa-beer fa-2x text-primary"></i></td>
         <td>
-          <h4><a href="./#/beers/{{book.id}}">{{ book.name }}</a><br><small>Some description</small></h4>
+          <h4><a href="./#/beers/{{beer.id}}">{{ beer.name }}</a><br><small>Some description</small></h4>
         </td>
-        <td class="text-center hidden-xs hidden-sm"><a href="./#/beers/{{book.id}}">{{ book.rating }}</a></td>
-        <td class="text-center hidden-xs hidden-sm"><a href="./#/beers/{{book.id}}">{{book.crafter}}</a></td>
-        <td class="text-center hidden-xs hidden-sm">by <a href="./#/beers/{{book.id}}">{{ book.author }}</a><br></td>
+        <td class="text-center hidden-xs hidden-sm"><a href="./#/beers/{{beer.id}}">{{ beer.rating }}</a></td>
+        <td class="text-center hidden-xs hidden-sm"><a href="./#/beers/{{beer.id}}">{{beer.crafter}}</a></td>
+        <td class="text-center hidden-xs hidden-sm">by <a href="./#/beers/{{beer.id}}">{{ beer.author }}</a><br></td>
       </tr>
 
     </tbody>

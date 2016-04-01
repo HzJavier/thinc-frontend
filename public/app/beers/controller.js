@@ -4,26 +4,26 @@ beerControllers.controller('BeerListCtrl', ['$scope', '$http', function ($scope,
 
   $http.get('api/items')
   .success(function (data) {
-    $scope.books = data;
+    $scope.beers = data;
   });
 
 }]);
 
 beerControllers.controller('BeerDetailCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
-  var bookId = $routeParams.id;
+  var beerId = $routeParams.id;
 
   $http.get('api/items')
   .success(function (data) {
-    $scope.book = {};
-    var bookIndex = _.findIndex(data, { id: bookId });
+    $scope.beer = {};
+    var beerIndex = _.findIndex(data, { id: beerId });
 
-    if (bookIndex >= 0){
-      $scope.book = data[bookIndex];
+    if (beerIndex >= 0){
+      $scope.beer = data[beerIndex];
     }
   });
 
   $scope.showRating = function () {
-    console.log($scope.book.rating);
+    console.log($scope.beer.rating);
   };
   $scope.number = 5;
   $scope.getNumber = function(num) {
@@ -31,9 +31,9 @@ beerControllers.controller('BeerDetailCtrl', ['$scope', '$http', '$routeParams',
   }
 
   $scope.updateRating = function (newRating) {
-    $scope.book.rating = newRating;
+    $scope.beer.rating = newRating;
 
-    $http.put('api/items/' + $scope.book.id, $scope.book)
+    $http.put('api/items/' + $scope.beer.id, $scope.beer)
     .success(function (data) {
       console.log(data);
     });

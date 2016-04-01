@@ -57,13 +57,13 @@
 
             <div class="col-xs-12 col-sm-8">
               <ul class="list-group">
-                <li class="list-group-item"><i class="fa fa-beer"> </i>  {{book.name}}</li>
-                <li class="list-group-item"><i class="fa fa-building"> </i>  {{book.crafter}}</li>
-                <li class="list-group-item"><i class="fa fa-user"> </i>  {{book.author}}</li>
-                <li class="list-group-item"><i class="fa fa-star"></i> {{book.rating}}</li>
+                <li class="list-group-item"><i class="fa fa-beer"> </i>  {{beer.name}}</li>
+                <li class="list-group-item"><i class="fa fa-building"> </i>  {{beer.crafter}}</li>
+                <li class="list-group-item"><i class="fa fa-user"> </i>  {{beer.author}}</li>
+                <li class="list-group-item"><i class="fa fa-star"></i> {{beer.rating}}</li>
                 <li class="list-group-item">
                   <div class="list-group-item rating-stars">
-                      <span class="rating-star" ng-repeat="i in getNumber(number) track by $index" ng-class="{ 'selected': book.rating >= $index + 1 }" ng-click="updateRating($index + 1);"></span>
+                      <span class="rating-star" ng-repeat="i in getNumber(number) track by $index" ng-class="{ 'selected': beer.rating >= $index + 1 }" ng-click="updateRating($index + 1);"></span>
                   </div>
                 </li>
               </ul>
@@ -83,7 +83,7 @@
 
         </p>
       </div>
-      
+
     </div>
 
   </div>
