@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 
 // Location of the file, relative to this file
 // TODO: move to a config file
-var ITEMS_FILE = '../data/items.json';
+var ITEMS_FILE = '../data/users.json';
 
 router.use(bodyParser.json());
 
@@ -23,11 +23,11 @@ router.get('/', function (req, res) {
   });
 });
 
-router.get('/:id', function (req, res) {
+router.get('/:user', function (req, res) {
   readItems()
   .then(function (data) {
     var items = JSON.parse(data);
-    var itemIndex = _.findIndex(items, { id: req.params.id });
+    var itemIndex = _.findIndex(items, { user: req.params.user });
     if (itemIndex >= 0 ) {
       res.send(JSON.stringify(items[itemIndex]));
     } else {

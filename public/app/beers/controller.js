@@ -1,17 +1,15 @@
-var bookControllers = angular.module('bookControllers', []);
+var beerControllers = angular.module('beerControllers', []);
 
-bookControllers.controller('BookListCtrl', ['$scope', '$http', function ($scope, $http) {
+beerControllers.controller('BeerListCtrl', ['$scope', '$http', function ($scope, $http) {
 
   $http.get('api/items')
   .success(function (data) {
     $scope.books = data;
   });
 
-  var bestBook = "The martian";
-  $scope.weeklyRecommendation = "Mastering Refactoring";
 }]);
 
-bookControllers.controller('BookDetailCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+beerControllers.controller('BeerDetailCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
   var bookId = $routeParams.id;
 
   $http.get('api/items')
@@ -27,6 +25,10 @@ bookControllers.controller('BookDetailCtrl', ['$scope', '$http', '$routeParams',
   $scope.showRating = function () {
     console.log($scope.book.rating);
   };
+  $scope.number = 5;
+  $scope.getNumber = function(num) {
+      return new Array(num);
+  }
 
   $scope.updateRating = function (newRating) {
     $scope.book.rating = newRating;

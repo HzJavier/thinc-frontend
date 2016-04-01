@@ -1,9 +1,4 @@
-<div class="row">
-  <div class="col-md-12">
-      <h1 class="page-title">Microbrew</h4>
-      <p class="text-muted page-title-alt">Qualify the best craft beers from your region</p>
-  </div>
-</div>
+
 <div class="row">
   <div class="col-md-12">
     <div class="pull-right">
@@ -29,11 +24,11 @@
       <tr ng-repeat="book in books | filter:bookQuery">
         <td class="text-center"><i class="fa fa-beer fa-2x text-primary"></i></td>
         <td>
-          <h4><a href="#">{{ book.name }}</a><br><small>Some description</small></h4>
+          <h4><a href="./#/beers/{{book.id}}">{{ book.name }}</a><br><small>Some description</small></h4>
         </td>
-        <td class="text-center hidden-xs hidden-sm"><a href="#">{{ book.rating }}</a></td>
-        <td class="text-center hidden-xs hidden-sm"><a href="#">{{book.crafter}}</a></td>
-        <td class="text-center hidden-xs hidden-sm">by <a href="#">{{ book.author }}</a><br></td>
+        <td class="text-center hidden-xs hidden-sm"><a href="./#/beers/{{book.id}}">{{ book.rating }}</a></td>
+        <td class="text-center hidden-xs hidden-sm"><a href="./#/beers/{{book.id}}">{{book.crafter}}</a></td>
+        <td class="text-center hidden-xs hidden-sm">by <a href="./#/beers/{{book.id}}">{{ book.author }}</a><br></td>
       </tr>
 
     </tbody>

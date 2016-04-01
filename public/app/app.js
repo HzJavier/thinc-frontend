@@ -1,21 +1,26 @@
 var reviewApp = angular.module('reviewApp', [
   'ngRoute',
-  'bookControllers'
+  'beerControllers',
+  'profileControllers'
 ]);
 
 reviewApp.config(['$routeProvider',
   function ($routeProvider) {
     $routeProvider
-    .when('/books', {
-        templateUrl: 'app/books/listView.html',
-        controller: 'BookListCtrl'
+    .when('/beers', {
+        templateUrl: 'app/beers/listView.html',
+        controller: 'BeerListCtrl'
     })
-    .when('/books/:id', {
-        templateUrl: 'app/books/detailView.html',
-        controller: 'BookDetailCtrl'
+    .when('/beers/:id', {
+        templateUrl: 'app/beers/detailView.html',
+        controller: 'BeerDetailCtrl'
+    })
+    .when('/profile', {
+        templateUrl: 'app/profile/profile.html',
+        controller: 'ProfileCtrl'
     })
     .otherwise({
-      redirectTo: '/books'
+      redirectTo: '/beers'
     });
   }
 ]);
