@@ -11,6 +11,7 @@
     <script src="app/app.js"></script>
     <script src="app/crew/controller.js"></script>
     <script src="app/signin/controller.js"></script>
+    <script src="app/signin/services.js"></script>
     <script src="app/home/controller.js"></script>
     
   </head>
@@ -18,12 +19,12 @@
   <header>
     <div id="logo">
       <img src="img/bwmedal.png"> Rate the crew
-    </div><nav ng-switch="success">
+    </div><nav>
       <a href="#/home">Home</a><!--
       --><a href="#/add">Add personal</a><!--
       --><a href="#/rate">Rate the crew</a><!--
-      --><a href="#/account" ng-switch-when="true">Account</a><!--
-      --><a href="#/signin" ng-switch-default>sign in</a>
+      --><a href="#/account">Account</a><!--
+      --><a href="#/signin">sign in</a>
     </nav>
   </header>
   <main ng-view>

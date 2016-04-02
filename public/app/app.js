@@ -5,6 +5,7 @@ var rtcApp = angular.module('rtcApp',[
 	'crewController',
 	'homeController',
 	'signinController',
+	'authServices'
 ]);
 
 
@@ -41,4 +42,11 @@ rtcApp.config(['$routeProvider',
 
 
 	}
-]);
+])
+.run(function($rootScope, AuthService, $location){
+	$rootScope.$on('$routeChangeStart', function(event, next, current){
+		/*if(!AuthService.isLoggedIn() && ($location.$$path !=  '/home' && $location.$$path != '/signin')){
+			$location.path('/home');
+		}*/
+	});
+});
