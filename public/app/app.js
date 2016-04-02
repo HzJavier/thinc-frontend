@@ -1,7 +1,8 @@
 var reviewApp = angular.module('reviewApp', [
   'ngRoute',
   'bookControllers',
-  'authControllers'
+  'authControllers',
+  'authServices'
 ]);
 
 reviewApp.config(['$routeProvider',
