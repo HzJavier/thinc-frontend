@@ -6,6 +6,7 @@
   "author": "HzJavier",
   "license": "MIT",
   "dependencies": {
+    "bower": "^1.7.7",
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "lodash": "^4.6.1",

@@ -1,0 +1,7 @@
+Search books: <input ng-model="bookQuery">
+
+<ul>
+  <li ng-repeat="book in books | filter:bookQuery">
+  Id: {{ book.id }} - <b> {{ book.name }} </b>
+  </li>
+</ul>

@@ -1,0 +1,17 @@
+<div class="book-detail-view-wrapper">
+  {{ book.name }}
+  <br/>
+
+  <!-- TODO: Make this in a loop, instead of hardcoded -->
+  <div class="rating-stars">
+    <span class="rating-star" ng-class="{ 'selected': book.rating >= 1 }" ng-click="updateRating(1);"></span>
+    <span class="rating-star" ng-class="{ 'selected': book.rating >= 2 }" ng-click="updateRating(2);"></span>
+    <span class="rating-star" ng-class="{ 'selected': book.rating >= 3 }" ng-click="updateRating(3);"></span>
+    <span class="rating-star" ng-class="{ 'selected': book.rating >= 4 }" ng-click="updateRating(4);"></span>
+    <span class="rating-star" ng-class="{ 'selected': book.rating >= 5 }" ng-click="updateRating(5);"></span>
+  </div>
+
+  <div ng-class="{ 'green': book.rating === 5 }" ng-click="showRating()">
+    Rating: {{ book.rating }} 
+  </div>
+</div>

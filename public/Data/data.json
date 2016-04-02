@@ -1,12 +1,12 @@
-{
-	"series": [
-		{
-			"name": "Game of thrones",
-			"director": "Fulanito"
-		},
-		{
-			"name": "Friends",
-			"director": "Fulanito de tal"
-		}
-	]
+{ 
+  "restaurants": [ 
+    { 
+      "name": "Sagrantino", 
+      "address": "Golfo de Cortés 4152, Guadalajara 44670, México" 
+    }, 
+    { 
+      "name": "Pig's Pearls", 
+      "address": "General Coronado 79, Guadalajara 44600, México" 
+    } 
+  ] 
 }
