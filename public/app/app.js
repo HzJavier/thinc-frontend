@@ -1,6 +1,7 @@
 var reviewApp = angular.module('reviewApp', [
   'ngRoute',
-  'bookControllers'
+  'bookControllers',
+  'authControllers'
 ]);
 
 reviewApp.config(['$routeProvider',
@@ -8,6 +9,7 @@ reviewApp.config(['$routeProvider',
     $routeProvider
     .when('/login', {
         templateUrl: 'app/login/loginView.html',
+        controller: 'LoginCtrl'
     })
     .when('/books', {
         templateUrl: 'app/books/listView.html',
