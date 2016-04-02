@@ -21,7 +21,14 @@ reviewApp.config(['$routeProvider',
         controller: 'BookDetailCtrl'
     })
     .otherwise({
-      redirectTo: '/login'
+      redirectTo: '/books'
     });
   }
-]);
+])
+.run(function ($rootScope, AuthService, $location) {
+  $rootScope.$on('$routeChangeStart', function (event, next, current) {
+    if (!AuthService.userIsLogged()) {
+      $location.path('/login');
+    }
+  }); 
+});
