@@ -15,17 +15,23 @@ signinController.controller('signinCtrl',['$scope','$http','$location',function 
   	}else{
   		
   		if(($scope.user.email !== '' && $scope.user.password !== '') && ($scope.user.email !== undefined && $scope.user.password !== undefined) ){
-  			if($scope.user.email === username && $scope.user.password === password){
-	  			$scope.success = true;
-	  			$scope.message = "Welcome";
-          $cookies.put('userlogged', 'Saúl Sánchez');
-	  			$location.path('#/home');
 
-  			}else{
-	  			$scope.success = false;
-	  			$scope.message = "Wrong login information!";
+          $http.post('api/login', $scope.user)
+          .success(function (data) {
+            console.log(data);
+          
 
-  			}
+    			if(data == 'success'){
+  	  			$scope.success = true;
+  	  			$scope.message = "Welcome";
+  	  			$location.path('#/home');
+
+    			}else{
+  	  			$scope.success = false;
+  	  			$scope.message = "Wrong login information!";
+
+    			}
+        });
   		}else{
   			$scope.success = false;
   			$scope.message = "Please fill both! email and password!";
