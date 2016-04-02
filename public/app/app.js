@@ -1,21 +1,44 @@
-var app = angular.module('dudesRatesApp',[
+
+
+var rtcApp = angular.module('rtcApp',[
 	'ngRoute',
-	'dudeController',
+	'crewController',
+	'homeController',
+	'signinController',
 ]);
 
-app.config(['$routeProvider',
+
+rtcApp.config(['$routeProvider',
 	function($routeProvider){
 		$routeProvider
-		.when('/dudes', {
-			templateUrl: 'app/dudes/dudesList.html',
-			controller: 'dudesList'
+		.when('/home', {
+			templateUrl: 'app/home/index.html',
+			controller: 'homeCtrl'
 		})
-		.when('/dudes/:id', {
-			templateUrl: 'app/dudes/details.html',
-			controller: 'dudesDetails'
+		.when('/rate', {
+			templateUrl: 'app/crew/listView.html',
+			controller: 'crewListCtrl'
+		})
+		.when('/rate/:id', {
+			templateUrl: 'app/crew/detailView.html',
+			controller: 'crewDetailsCtrl'
+		})		
+		.when('/add', {
+			templateUrl: 'app/crew/AddView.html',
+			controller: 'crewAddCtrl'
+		})
+		.when('/account', {
+			templateUrl: 'app/home/account.html',
+			controller: 'accountCtrl'
+		})		
+		.when('/signin', {
+			templateUrl: 'app/signin/signin.html',
+			controller: 'signinCtrl'
 		})
 		.otherwise({ 
-			redirectTo: '/dudes'
+			redirectTo: '/home'
 		});
+
+
 	}
 ]);

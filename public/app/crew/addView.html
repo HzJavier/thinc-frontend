@@ -1,0 +1,16 @@
+
+<section>
+	<div id="add-crew-wrapper">
+		<h1>Add a crew member</h1>
+		<input type="text" placeholder="Write the workers name" ng-model="member.name" id="name">
+		<input type="text" placeholder="Write where he/she works" ng-model="member.organization" id="organization">
+		<input type="text" placeholder="write this persons charge" ng-model="member.charge" id="charge">
+		<input type="text" placeholder="Write some details about him/she" ng-model="member.details" id="details">
+
+		<button ng-click="addMember()">Add</button>
+		<div id="alerts" class="failure" ng-class="{ 'success': success == true }">
+			{{ message }}
+		</div>
+	</div>
+
+</section>

@@ -8,14 +8,13 @@ var bodyParser = require('body-parser');
 
 // Location of the file, relative to this file
 // TODO: move to a config file
-var ITEMS_FILE = '../data/items.json';
+var ITEMS_FILE = '../data/crew.json';
 
 router.use(bodyParser.json());
 
 /**
  * Item routes
  */
-
 router.get('/', function (req, res) {
   readItems()
   .then(function (data) {
@@ -60,6 +59,26 @@ router.put('/:id', function (req, res) {
       res.status(404);
       res.send('Error: No such item');
     }
+  });
+});
+
+/**
+ * Add new item
+ */
+router.post('/',function (req, res, next) {
+   readItems()
+   .then(function (data) {
+     var items = JSON.parse(data);
+     var newId = parseInt(items[items.length - 1].id) + 1;
+     console.log(newId);
+
+      req.body.id = newId+"";
+
+       items.push(req.body);
+       writeItems(JSON.stringify(items))
+       .then(function () {
+         res.send(items[req.params.id]);
+       });
   });
 });
 

@@ -1,0 +1,14 @@
+
+<section>
+	<div id="signin-wrapper">
+		<img src="../img/bwmedal.png">
+		<h1>Sign in!</h1>
+		<input type="text" placeholder="write your email!" ng-model="user.email" id="email">
+		<input type="password" placeholder="write your password!" ng-model="user.password" id="password">
+		<button ng-click="checkCredentials()">Enter</button>
+		<div id="alerts" class="failure" ng-class="{ 'success': success == true }">
+			{{ message }}
+		</div>
+	</div>
+
+</section>

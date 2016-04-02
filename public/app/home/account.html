@@ -1,0 +1,24 @@
+
+<section>
+	<div class="account-wrapper">
+		<h1>Personal information</h1>
+		<input type="text" placeholder="Name" ng-model="user.name" id="name">
+		<input type="text" placeholder="Email" ng-model="user.email" id="organization">
+
+		<button ng-click="addMember()">Save</button>
+		<div id="alerts" class="failure" ng-class="{ 'success': success == true }">
+			{{ message }}
+		</div>
+	</div>
+	<div class="account-wrapper">
+		<h1>Change password</h1>
+		<input type="password" placeholder="Write your old password" ng-model="user.oldpassword" id="charge">
+		<input type="password" placeholder="Write the new password" ng-model="user.newpassword" id="details">
+		<input type="password" placeholder="Confirm the new password" ng-model="user.confirmpassword" id="details">
+
+		<button ng-click="addMember()">Save</button>
+		<div id="alerts" class="failure" ng-class="{ 'success': success == true }">
+			{{ message }}
+		</div>
+	</div>
+</section>

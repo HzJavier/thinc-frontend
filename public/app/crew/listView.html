@@ -1,0 +1,20 @@
+<section id="listview">
+	<h1>Crew memebers list</h1>
+	<input ng-model="membersQuery" placeholder="search a crew member. You can search by name, organization or rating!" id="searchbar">
+	<p class="details"> Click over a crew member so you can view his details and rate him! </p>
+
+	<div id="items-wrapper">
+	  <div ng-repeat="member in members | filter:membersQuery" class="items" ng-click="goToUrl('rate/'+member.id)">
+	  
+	 	<div class="name" ng-href="#/rate/{{member.id}}">
+	 		{{ member.name }}
+	 	</div>
+	 	<div class="organization">
+	 		{{ member.organization }}
+	 	</div><!--
+	 	--><div class="rating">
+	 		{{ member.rating }}
+	 	</div>
+	  </div>
+	</div>
+</section>
