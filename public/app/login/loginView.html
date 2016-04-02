@@ -4,4 +4,8 @@
     Password: <input type="password" ng-model="password">
     <button ng-click="login()">Login</button>
   </form>
+
+  <div class="error-message" ng-show="error">
+    Invalid credentials
+  </div>
 </div>
