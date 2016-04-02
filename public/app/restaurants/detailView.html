@@ -1,17 +1,40 @@
-<div class="book-detail-view-wrapper">
-  {{ book.name }}
-  <br/>
-
+<div class="restaurant-detail-view-wrapper">
+  <br>
   <!-- TODO: Make this in a loop, instead of hardcoded -->
   <div class="rating-stars">
-    <span class="rating-star" ng-class="{ 'selected': book.rating >= 1 }" ng-click="updateRating(1);"></span>
-    <span class="rating-star" ng-class="{ 'selected': book.rating >= 2 }" ng-click="updateRating(2);"></span>
-    <span class="rating-star" ng-class="{ 'selected': book.rating >= 3 }" ng-click="updateRating(3);"></span>
-    <span class="rating-star" ng-class="{ 'selected': book.rating >= 4 }" ng-click="updateRating(4);"></span>
-    <span class="rating-star" ng-class="{ 'selected': book.rating >= 5 }" ng-click="updateRating(5);"></span>
+    <span class="rating-star" ng-class="{ 'selected': restaurant.rating >= 1 }" ng-click="updateRating(1);"></span>
+    <span class="rating-star" ng-class="{ 'selected': restaurant.rating >= 2 }" ng-click="updateRating(2);"></span>
+    <span class="rating-star" ng-class="{ 'selected': restaurant.rating >= 3 }" ng-click="updateRating(3);"></span>
+    <span class="rating-star" ng-class="{ 'selected': restaurant.rating >= 4 }" ng-click="updateRating(4);"></span>
+    <span class="rating-star" ng-class="{ 'selected': restaurant.rating >= 5 }" ng-click="updateRating(5);"></span>
   </div>
-
-  <div ng-class="{ 'green': book.rating === 5 }" ng-click="showRating()">
-    Rating: {{ book.rating }} 
+  <br><br>
+  <div class="c-4">
+    <!--<img src="./Resources/sagrantino1.jpg">-->
+    <img src=' {{ restaurant.img  }}'>
+    
+      <h3> Name: </h3>
+      <ul>
+        <li> {{ restaurant.name }} </li>
+      </ul>
+      <h3> Address: </h3>
+      <ul>
+        <li> {{ restaurant.address }} </li>
+      </ul>
+      <h3> Phone: </h3>
+      <ul>
+        <li> {{ restaurant.phone }} </li>
+      </ul>
+      <h3> Type of food: </h3>
+      <ul>
+        <li> {{ restaurant.typeoffood }} </li>
+      </ul>
+      <h3> Description: </h3>
+      <ul>
+        <li> {{ restaurant.description }} </li>
+      </ul>
+      <div ng-click="showRating()">
+        <li> Rating: {{ restaurant.rating }} </li>
+      </div>
   </div>
 </div>

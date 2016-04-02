@@ -11,14 +11,25 @@
   <script src="components/angular-route/angular-route.js"></script> 
   <script src="app/app.js"></script>
   <script src="app/restaurants/controller.js"></script>
-
+  <script src="app/login/controller.js"></script>
+  <script src="app/login/services.js"></script>
 </head>
 <body>
 
   <!-- This is a comment -->
-
-
   <div id="main-wrapper">
+    <img src="./Resources/Restaurant_Cover.jpg" width="940" height="300" alt="The Guadalajara's Best Restaurants">
+    <ul class="nav">
+      <a href="#/home"><li>Home</li></a>
+      <a href="#/restaurants/list"><li>List</li></a>
+      <a href="#"><li>Styles</li></a>
+      <a href="#"><li>Price</li></a>
+      <a href="#"><li>Awards</li></a>
+      <a href="#/login"><li>Login</li></a>
+    </ul>
+    <div id = "holdingContainer">
+      <h1 class="pl">The Guadalajara's Best Restaurants</h1>
+    </div>
     <div ng-view></div>
   </div>
 

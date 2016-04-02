@@ -1,0 +1,12 @@
+<br>
+<div class="login-wrapper">
+	<form>
+		Username: <input type="text" ng-model="username">
+		Password: <input type="password" ng-model="password">
+		<button ng-click="login()">Login</button>
+	</form>
+
+	<div class="error-message" ng-class="{'hidden': !error}">
+		Invalid Credentials
+	</div>
+</div>

@@ -1,7 +1,8 @@
-Search books: <input ng-model="bookQuery">
+<br>
+<h3>Search a Restaurant: <input ng-model="restaurantQuery"></h3>
 
 <ul>
-  <li ng-repeat="book in books | filter:bookQuery">
-  Id: {{ book.id }} - <b> {{ book.name }} </b>
+  <li ng-repeat="restaurant in restaurants | filter:restaurantQuery" > 
+  <b> Name: </b> {{ restaurant.name }} - <b> Phone: </b> {{ restaurant.phone }}  - <b> Address: </b> {{ restaurant.address }} 
   </li>
 </ul>
