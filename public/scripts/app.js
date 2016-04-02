@@ -1,11 +1,22 @@
-var reviewApp = angular.module('reviewApp', []);
+var reviewApp = angular.module('reviewApp', [
+	'ngRoute',
+	'bookControllers'
+	]);
 
-reviewApp.controller('playerListCtrl', ['$scope', function($scope){
+reviewApp.config(['$routeProvider'
+	function ($routeProvider){
+		$routeProvider
+		.when('/books',{
+			templateUrl: 'app/books/listView'
+		})
+	}])
 
-$scope.players = [
-{id:0, name: 'Chichadios'},
-{id:1, name: 'Maza'}
-];
+reviewApp.controller('playerListCtrl', ['$scope', '$http',function($scope, $http){
+
+$http.get('api/items')
+.success(function (data){
+	$scope.players = data;
+});
 
 $scope.weeklyRecomendation = "Chichadios";
 }]);

@@ -1,0 +1,25 @@
+<html lang="en" ng-app="reviewApp">
+<head>
+	<meta charset="UTF-8">
+	<title>World's Futbol Players</title>
+	<link rel="stylesheet" href="./styles/main.css">
+	<script src="components/jquery/dist/jquery.js"></script>  
+  <script src="components/lodash/dist/lodash.js"></script>  
+  <script src="components/angular/angular.js"></script>  
+  <script src="components/angular-route/angular-route.js"></script>  
+  <script src="app/app.js"></script>
+  <script src="app/players/controller.js"></script>
+  <script src="app/users/controller.js"></script>
+</head>
+<body>
+	<div id="main-wrapper">
+		<h1>World's Football Players</h1>
+	<div id="profileContent">
+		<a href="./#/user/1" id="profile">Profile</a>
+	</div>
+	</div>	
+	<div id="content-wrapper">
+		<div ng-view></div>
+	</div>
+</body>
+</html>

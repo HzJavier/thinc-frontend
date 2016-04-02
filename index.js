@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.use('/api/items', itemRoutes);
 
-var PORT = 8080;
+var PORT = 80;
 app.listen(PORT, function () {
   console.log('Listening on ' + PORT);
 });

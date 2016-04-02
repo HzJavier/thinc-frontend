@@ -1,0 +1,5 @@
+<div class="search">Search players: <input ng-model="playerQuery"></div>
+
+<div class="content-items" ng-repeat="player in players | filter:playerQuery" ng-click="goTo(player.id)"> 
+	Id: {{ player.id }} - <b> {{ player.name }} </b> 
+</div>

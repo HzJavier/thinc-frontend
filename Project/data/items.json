@@ -1,0 +1,7 @@
+[
+{"id":"1","name":"Javier Hernandez","position":"DC","team":"Bayern Leverkusen","image":"https://upload.wikimedia.org/wikipedia/commons/7/7a/Chicharito_2010.jpg","rating":2},
+{"id":"2","name":"Javier Rodriguez","position":"DF","team":"Cruz Azul","image":"https://upload.wikimedia.org/wikipedia/commons/7/78/Maza_vfb.jpg","rating":0},
+{"id":"3","name":"Hector Herrera","position":"MC","team":"Porto","image":"https://upload.wikimedia.org/wikipedia/commons/a/ac/DK-Porto15_%2812%29.jpg","rating":0},
+{"id":"4","name":"Omar Bravo","position":"DC","team":"Chivas","image":"https://upload.wikimedia.org/wikipedia/commons/6/6b/Omar_Bravo_2015.jpg","rating":0},
+{"id":"5","name":"Alfredo Talavera","position":"PO","team":"Toluca","image":"https://upload.wikimedia.org/wikipedia/commons/9/95/Alfredo_Talavera.jpg","rating":0}
+]
