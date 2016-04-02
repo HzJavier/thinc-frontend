@@ -1,6 +1,6 @@
 var authControllers = angular.module('authControllers', []);
 
-authControllers.controller('LoginCtrl', ['$scope', 'AuthService', function ($scope, AuthService) {
+authControllers.controller('LoginCtrl', ['$scope', '$location', 'AuthService', function ($scope, $location, AuthService) {
   $scope.username = "";
   $scope.password = "";
 
@@ -11,7 +11,15 @@ authControllers.controller('LoginCtrl', ['$scope', 'AuthService', function ($sco
     AuthService.login({
       username: $scope.username,
       password: $scope.password
+    }).then(function () {
+      if(AuthService.userIsLogged()){
+        // Redirect to /books  
+        $location.path('/books');
+      } else {
+        $scope.error = true;  
+      };
     }); 
+    
 
   };
 }]);
