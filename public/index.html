@@ -5,20 +5,53 @@
   <title></title>
 
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="components/font-awesome/css/font-awesome.css">
   <script src="components/jquery/dist/jquery.js"></script>  
-  <script src="components/lodash/dist/lodash.js"></script>  
   <script src="components/angular/angular.js"></script>  
   <script src="components/angular-route/angular-route.js"></script>  
   <script src="app/app.js"></script>
-  <script src="app/books/controller.js"></script>
-  <script src="app/login/controllers.js"></script>
-  <script src="app/login/services.js"></script>
+  <script src="app/movies/controller.js"></script>
+  <script src="app/users/controller.js"></script>
 </head>
 <body>
-  <!-- This is a comment -->
+  <div id="header" ng-controller="UserLogIn">
+    <div id="header-wrapper">
+      <div class="left">
+        <ul>
+          <li>
+            <a class="logo" href="/#/movies">MovieSearch</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a class="user" href="/#/user">{{fullName}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="sign-in" ng-class="{'show':logged==false,'hide':logged==true}">
+      <div id="sign-in-wrapper">
+        <div class="header">
+          Iniciar sesión
+        </div>
+        <div class="content">
+          <input type="text" ng-model="login.name" placeholder="Usuario">
+          <input type="password" ng-model="login.pass" placeholder="Contraseña">
+        </div>
+        <div class="error" ng-class="{'show':showError==true,'hide':showError==false}">
+          Usuario incorrecto
+        </div>
+        <div class="footer">
+          <button ng-click="logIn()" class="button-acept">Entrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-   <div id="main-wrapper">
-      <div ng-view></div>
-   </div>
+  <div id="main-wrapper">
+    <div ng-view></div>
+  </div>
 </body>
 </html>

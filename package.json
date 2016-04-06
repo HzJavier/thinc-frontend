@@ -1,15 +1,20 @@
 {
-  "name": "thinc-frontend",
-  "version": "1.0.0",
-  "description": "Repor for frontend course @ Thinc",
-  "main": "index.js",
-  "author": "HzJavier",
-  "license": "MIT",
+  "repository": {
+    "name": "thinc-frontend",
+    "version": "1.0.0",
+    "description": "Repor for frontend course @ Thinc",
+    "main": "index.js",
+    "author": "HzJavier",
+    "dependencies": {
+      "bower": "^1.7.7",
+      "lodash": "^4.6.1",
+      "q": "^1.4.1",
+      "body-parser": "^1.15.0",
+      "express": "^4.13.4"
+    }
+  },
+  "license": "UNLICENSED",
   "dependencies": {
-    "bower": "^1.7.7",
-    "lodash": "^4.6.1",
-    "q": "^1.4.1",
-    "body-parser": "^1.15.0",
-    "express": "^4.13.4"
+    "express-session": "^1.13.0"
   }
 }

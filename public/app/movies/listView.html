@@ -1,0 +1,71 @@
+<div class="list-view" ng-repeat="category in categories">
+	<div class="header">
+		<h1 class="fa fa-film">
+			<span>
+				{{category.title}}
+			</span>
+		</h1>
+	</div>	
+	<div class="container-item-list">
+		<div class="item-list">
+			<ul>
+				<li ng-repeat="movie in movies | filter:{genre:category.genre}">
+					<div class="item">
+						<img width="145.6" height="214.4" ng-src="../../images/min_{{movie.id}}.jpg" alt="">
+						<input type="button" value="Vista previa" ng-click="openPreview(movie)">
+					</div>
+					<div class="rank">
+						<ul>
+							<li class="fa" ng-class="{'fa-star':movie.rank>=1,'fa-star empty':movie.rank<1}"></li>
+							<li class="fa" ng-class="{'fa-star':movie.rank>=2,'fa-star empty':movie.rank<2}"></li>
+							<li class="fa" ng-class="{'fa-star':movie.rank>=3,'fa-star empty':movie.rank<3}"></li>
+							<li class="fa" ng-class="{'fa-star':movie.rank>=4,'fa-star empty':movie.rank<4}"></li>
+							<li class="fa" ng-class="{'fa-star':movie.rank>=5,'fa-star empty':movie.rank<5}"></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="left-stick"></div>
+			<div class="right-stick"></div>
+		</div>
+	</div>
+</div>
+
+<div id="preview-movie" ng-class="{'show':showModal==true,'hide':showModal==false}">
+	<div id="preview-wrapper">
+		<div class="header">
+			<a class="close fa fa-close" ng-click="closePreview()"></a>
+		</div>
+		<div class="content-media">
+			<img width="333px" height="500px" ng-src="../../images/full_{{currentMoviePreview.id}}.jpg" alt="">
+		</div>
+		<div class="content-info">
+			<ul>
+				<li class="titulo">
+					{{currentMoviePreview.title}}
+				</li>
+				<li class="info">
+					Director: <span>{{currentMoviePreview.director}}</span>
+				</li>
+				<li class="info">
+					Género: <span>{{currentMoviePreview.genre}}</span>
+				</li>
+				<li class="info">
+					Año: <span>{{currentMoviePreview.year}}</span>
+				</li>
+				<li class="info">
+					Calificación: <span>{{currentMoviePreview.rank}}</span>
+				</li>
+			</ul>
+			<div class="rank">
+				<ul ng-mouseleave="hoverStar=currentMoviePreview.rank">
+					<li class="fa fa-3x" ng-class="{'fa-star':hoverStar>=1,'fa-star-o':hoverStar<1}" ng-mouseenter="hoverStar=1" ng-click="currentMoviePreview.rank=1"></li>
+					<li class="fa fa-3x" ng-class="{'fa-star':hoverStar>=2,'fa-star-o':hoverStar<2}" ng-mouseenter="hoverStar=2" ng-click="currentMoviePreview.rank=2"></li>
+					<li class="fa fa-3x" ng-class="{'fa-star':hoverStar>=3,'fa-star-o':hoverStar<3}" ng-mouseenter="hoverStar=3" ng-click="currentMoviePreview.rank=3"></li>
+					<li class="fa fa-3x" ng-class="{'fa-star':hoverStar>=4,'fa-star-o':hoverStar<4}" ng-mouseenter="hoverStar=4" ng-click="currentMoviePreview.rank=4"></li>
+					<li class="fa fa-3x" ng-class="{'fa-star':hoverStar>=5,'fa-star-o':hoverStar<5}" ng-mouseenter="hoverStar=5" ng-click="currentMoviePreview.rank=5"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 // Location of the file, relative to this file
 // TODO: move to a config file
 var ITEMS_FILE = '../data/items.json';
+var CATEGORIES_FILE = '../data/categories.json';
 
 router.use(bodyParser.json());
 
@@ -18,6 +19,13 @@ router.use(bodyParser.json());
 
 router.get('/', function (req, res) {
   readItems()
+  .then(function (data) {
+    res.send(data);
+  });
+});
+
+router.get('/categories', function (req, res) {
+  readCategories()
   .then(function (data) {
     res.send(data);
   });
@@ -84,6 +92,18 @@ function writeItems(data) {
 function readItems() {
   var deferred = q.defer();
   var filepath = path.join(__dirname, ITEMS_FILE);
+
+  fs.readFile(filepath, 'utf8', function (err, data) {
+    if (err) { deferred.reject(err); }
+    deferred.resolve(data);
+  });
+
+  return deferred.promise;
+}
+
+function readCategories() {
+  var deferred = q.defer();
+  var filepath = path.join(__dirname, CATEGORIES_FILE);
 
   fs.readFile(filepath, 'utf8', function (err, data) {
     if (err) { deferred.reject(err); }

@@ -1,14 +1,14 @@
 var express = require('express');
 var app = express();
 var itemRoutes = require('./routes/items');
-var loginRoutes = require('./routes/login');
+var userRoutes = require('./routes/users');
 
 app.use(express.static(__dirname + '/public'));
 
 app.use('/api/items', itemRoutes);
-app.use('/api/login', loginRoutes);
 
-var PORT = 8080;
-app.listen(PORT, function () {
-  console.log('Listening on ' + PORT);
+app.use('/api/users', userRoutes);
+
+app.listen(3000, function () {
+  console.log('Listening on 3000');
 });

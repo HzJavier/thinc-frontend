@@ -1,0 +1,14 @@
+[
+  {
+    "genre": "crime",
+    "title": "películas de crimen"
+  },
+  {
+    "genre": "drama",
+    "title": "películas de drama"
+  },
+  {
+    "genre": "western",
+    "title": "películas de vaqueros"
+  }
+]

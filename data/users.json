@@ -1,6 +1,20 @@
 [
   {
-    "username": "javier",
-    "password": "123"
+    "user": "jibran",
+    "password": "123456",
+    "name": "Jibran Alejandro",
+    "age": "24"
+  },
+  {
+    "user": "carlos",
+    "password": "abcdef",
+    "name": "Carlos Ramirez",
+    "age": "20"
+  },
+  {
+    "user": "pedro",
+    "password": "qwerty",
+    "name": "Pedro Moreno",
+    "age": "27"
   }
 ]

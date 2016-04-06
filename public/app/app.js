@@ -1,34 +1,21 @@
 var reviewApp = angular.module('reviewApp', [
   'ngRoute',
-  'bookControllers',
-  'authControllers',
-  'authServices'
+  'movieControllers'
 ]);
 
 reviewApp.config(['$routeProvider',
   function ($routeProvider) {
     $routeProvider
-    .when('/login', {
-        templateUrl: 'app/login/loginView.html',
-        controller: 'LoginCtrl'
+    .when('/movies', {
+        templateUrl: 'app/movies/listView.html',
+        controller: 'MovieListCtrl'
     })
-    .when('/books', {
-        templateUrl: 'app/books/listView.html',
-        controller: 'BookListCtrl'
-    })
-    .when('/books/:id', {
-        templateUrl: 'app/books/detailView.html',
-        controller: 'BookDetailCtrl'
+    .when('/user', {
+        templateUrl: 'app/users/userView.html',
+        controller: 'UserLogIn'
     })
     .otherwise({
-      redirectTo: '/books'
+      redirectTo: '/movies'
     });
   }
-])
-.run(function ($rootScope, AuthService, $location) {
-  $rootScope.$on('$routeChangeStart', function (event, next, current) {
-    if (!AuthService.userIsLogged()) {
-      $location.path('/login');
-    }
-  }); 
-});
+]);
