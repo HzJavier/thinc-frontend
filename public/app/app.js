@@ -1,21 +1,24 @@
 var reviewApp = angular.module('reviewApp',[
   'ngRoute',
-  'movieControllers'
+  'movieControllers',
+  'userControllers',
+  'authControllers',
+  'authServices'
 ]);
 
 reviewApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
     .when('/login',{
-      templateUrl: 'app/movies/loginView.html',
-      controller: 'MovieLoginCtrl'
+      templateUrl: 'app/login/loginView.html',
+      controller: 'authControllers'
     })
     .when('/signup', {
-        templateUrl: 'app/movies/signUpView.html',
+        templateUrl: 'app/login/signUpView.html',
         controller: 'MovieSignupCtrl'
     })
     .when('/profile/:id', {
-        templateUlr: 'app/user/profileView.html',
+        templateUrl: 'app/user/profileView.html',
         controller: 'ProfileCtrl'
     })
     .when('/movies', {
@@ -30,4 +33,11 @@ reviewApp.config(['$routeProvider',
       redirectTo: '/movies'
     });
   }
-]);
+])
+.run(function ($rootScope, AuthService, $location) {
+  $rootScope.$on('$routeChangeStart', function (event, next, current) {
+    if (!AuthService.userIsLogged()) {
+      $location.path('/login');
+    }
+  });
+});

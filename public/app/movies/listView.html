@@ -6,7 +6,7 @@
     Search movies: <input ng-model="movieQuery">
      <ul>
        <li ng-repeat="movie in movies | filter:movieQuery" ng-click="go(movie.id)" class="slide">
-         Id: {{ movie.id }} - <b> {{ movie.name }} </b>
+         <b> {{ movie.name }} </b>
        </li>
      </ul>
    </div>

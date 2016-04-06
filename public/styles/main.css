@@ -39,7 +39,7 @@ html, body, .ng-scope {
 
 .home-body{
   height: 840px;
-  width: 1280px;
+  width: 100%;
   position: absolute;
     top: 0;
     left: 0;
@@ -73,7 +73,7 @@ html, body, .ng-scope {
 
 .signup-body{
   height: 840px;
-  width: 1280px;
+  width: 100%;
   position: absolute;
     top: 0;
     left: 0;
@@ -98,7 +98,7 @@ html, body, .ng-scope {
 
 .list-body{
   height: 840px;
-  width: 1280px;
+  width: 100%;
   position: absolute;
     top: 0;
     left: 0;
@@ -123,12 +123,11 @@ html, body, .ng-scope {
   color: #8B0400;
   font-size: 50px;
   text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-  margin-bottom: 20px;
 }
 
 .detail-body{
   height: 840px;
-  width: 1280px;
+  width: 100%;
   position: absolute;
     top: 0;
     left: 0;
@@ -140,7 +139,7 @@ html, body, .ng-scope {
 }
 
 .movie-detail-wrapper{
-  width: 500px;
+  width: 600px;
   margin-left: 25px;
   color: #FFFFFF;
   font-size: 18px;
@@ -185,9 +184,37 @@ html, body, .ng-scope {
   font-size: 20px;
   display: inline-block;
   cursor:pointer;
-  position: relative;
-  left: 1000px;
-  bottom: 50px;
+}
+
+.profile-body{
+  height: 840px;
+  width: 1280px;
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  background-image: url("https://i.annihil.us/u/prod/aouquiz/images/background_desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+.profile-wrapper{
+  width: 600px;
+  margin-left: 25px;
+  color: #FFFFFF;
+  font-size: 18px;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.error{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 li.ng-enter,
@@ -224,6 +251,7 @@ li.ng-enter {
 
 .tab-content {
   font-family: 'Titillium Web', sans-serif;
+  color: #FFFFFF;
 }
 
 .form {
@@ -291,11 +319,6 @@ textarea {
 .signup{
   margin-top:-20px;
   margin-left: 110px;
-  text-align:right;
-}
-
-.login{
-  margin-top:-20px;
   text-align:right;
 }
 
